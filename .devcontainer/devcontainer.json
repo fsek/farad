@@ -1,0 +1,9 @@
+{
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"runArgs": [
+		"--network=host"
+	],
+	"postCreateCommand": "npm install"
+}
