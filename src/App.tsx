@@ -1,12 +1,29 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './modules/Header';
+import Footer from './modules/Footer';
+import Home from './modules/Home';
+import Studenter from './modules/Studenter';
+import Foretag from './modules/Foretag';
+import OmOss from './modules/OmOss';
+
 
 function App() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-forange">
-        Tjenare, Benis här, tuta och kör nu!
-      </h1>
-    </div>
+    <Router>
+      <div>
+        <Header />
+        
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/studenter" element={<Studenter />} />
+          <Route path="/foretag" element={<Foretag />} />
+          <Route path="/omoss" element={<OmOss />} />
+        </Routes>
+        
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
