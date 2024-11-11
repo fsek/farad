@@ -9,9 +9,9 @@ function Header() {
           <h1 className="text-2xl font-bold">FARAD 2025</h1>
 
           <nav className="flex space-x-6 ml-auto mr-10">
-            <a href="/Studenter" className="text-black text-lg font-bold hover:text-gray-300">För studenter</a>
-            <a href="/Foretag" className="text-black text-lg font-bold hover:text-gray-300">För företag</a>
-            <a href="/OmOss" className="text-black text-lg font-bold hover:text-gray-300">Om oss</a>
+            <a href="/Studenter" className="text-white text-lg font-bold hover:text-gray-300">För studenter</a>
+            <a href="/Foretag" className="text-white text-lg font-bold hover:text-gray-300">För företag</a>
+            <a href="/OmOss" className="text-white text-lg font-bold hover:text-gray-300">Om oss</a>
           </nav>
         </header>
         
