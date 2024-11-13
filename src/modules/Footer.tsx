@@ -2,7 +2,9 @@
 function Footer() {
     return (
         <footer className="py-4 text-center">
-          <h1 className="text-2xl font-bold"></h1>
+          <p>
+            Hemsidan är just nu under rekonstruktion. Vänligen ha överseende med detta!
+          </p>
 
         </footer>
       );
