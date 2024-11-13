@@ -15,5 +15,7 @@ export default {
       },
     },
   },
-  plugins: [],
+  darkMode: 'media',
+  plugins: [
+  ],
 };
