@@ -6,10 +6,10 @@ function Studenter() {
       <h1 className="text-4xl font-bold text-forange">
         Studenter
       </h1>
-      <p className="text-lg font-bold text-white dark:text-black">
+      <p className="text-lg font-bold text-black">
         Vill du jobba på FARAD? Klart du vill! Då anmäler du dig på denna länk: <a href="https://forms.gle/HxVdxwSJN6AF2z6Q9" className="text-blue dark:text-graytext font-bold hover:text-blue">länk till formulär</a>
       </p>
-      <p className="font-bold text-white dark:text-black">
+      <p className="font-bold text-black">
         Mer info kommer
       </p>
       <a href="" className="flex items-center">

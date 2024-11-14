@@ -10,7 +10,7 @@ function OmOss() {
         <div className="lg:container">
           <img src={farad_2025} alt="Very handsome photo of FARAD 2025" className="h-auto w-2/3 mx-auto m-4" />
         </div>
-        <p className="text-white dark:text-black font-bold">Mer info kommer snart</p>
+        <p className="text-black font-bold">Mer info kommer snart</p>
       </div>
   );
 }
