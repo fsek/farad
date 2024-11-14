@@ -25,7 +25,7 @@ const seTranslation = {
     "moreinfo": "Mer info kommer",
 
     //About page
-    "weare": "Vi är projectgruppen!"
+    "weare": "Vi är projektgruppen!"
 }
       
 export default seTranslation;
