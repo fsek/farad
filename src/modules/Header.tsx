@@ -1,6 +1,24 @@
 import logo from '../assets/FARAD-logga.png';
+import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
+import ReactCountryFlag from "react-country-flag"
 
 function Header() {
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (language: string) => {
+      i18n.changeLanguage(language);
+    };
+
+    const [currentLang, setCurrentLang] = useState('en');
+
+    const toggleLanguage = () => {
+      const newLang = currentLang === 'en' ? 'se' : 'en';
+      setCurrentLang(newLang);
+      changeLanguage(newLang);
+    };
+
+
     return (
         <header className="sticky top-0 z-20 shadow-md flex justify-start items-center w-screen bg-white dark:bg-black">
           <a href="/" className="flex items-center">
@@ -9,10 +27,19 @@ function Header() {
           <h1 className="text-2xl font-bold">FARAD 2025</h1>
 
           <nav className="flex space-x-6 ml-auto mr-10">
-            <a href="/Studenter" className="text-black dark:text-white text-lg font-bold hover:text-gray-300">För studenter</a>
-            <a href="/Foretag" className="text-black dark:text-white text-lg font-bold hover:text-gray-300">För företag</a>
-            <a href="/OmOss" className="text-black dark:text-white text-lg font-bold hover:text-gray-300">Om oss</a>
+            <a href="/Foretag" className="text-black dark:text-white text-lg font-bold hover:text-gray-300">{t("for companies")}</a>
+            <a href="/Studenter" className="text-black dark:text-white text-lg font-bold hover:text-gray-300">{t("for students")}</a>
+            <a href="/OmOss" className="text-black dark:text-white text-lg font-bold hover:text-gray-300">{t("about")}</a>
           </nav>
+
+          <button onClick={toggleLanguage} className="mx-4 p-0 w-16 h-12 flex justify-center items-center">
+            {currentLang === 'se' ? (
+                <ReactCountryFlag countryCode="GB" svg className="w-full h-full text-4xl"/>
+            ) : (
+                <ReactCountryFlag countryCode="SE" svg className="w-full h-full text-4xl"/>
+            )}
+          </button>
+
         </header>
         
       );
