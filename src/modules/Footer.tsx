@@ -11,7 +11,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Linkedin"
-            className="text-black dark:text-white hover:text-blue-500 transition-colors"
+            className="text-black hover:text-blue-500 transition-colors"
           >
             <FaLinkedin className="h-12 w-12" />
           </a>
@@ -20,14 +20,14 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="text-black dark:text-white hover:text-pink-500 transition-colors"
+            className="text-black hover:text-pink-500 transition-colors"
           >
             <FaInstagram className="h-12 w-12" />
           </a>
         </div>
         <div className="text-center my-6 font-bold">
           <div className="text-2xl">{t("contact")}:</div>
-          <a href="mailto:farad@fsektionen.se" className="text-black dark:text-white text-2xl font-bold hover:text-gray-300">farad@fsektionen.se</a>
+          <a href="mailto:farad@fsektionen.se" className="text-black text-2xl font-bold hover:text-gray-300">farad@fsektionen.se</a>
         </div>
         <a href="https://fsektionen.se/" className="flex justify-end">
           <img src={fsek} alt="Logo" className="h-20 my-4 mx-8" />
