@@ -45,8 +45,6 @@ const seTranslation = {
     "contact talks info": "Ert företag tillhandahåller en kravprofil för studenter ni vill komma i kontakt med. Projektgruppen levererar 5 studenter som möter kravprofilen samt förser er med ett lugnt rum för samtalen",
 
 
-
-
     //Students page
     "students": "Studenter",
     "work": "Vill du jobba på FARAD? Klart du vill! Då anmäler du dig på denna länk:",

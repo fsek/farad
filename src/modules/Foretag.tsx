@@ -9,7 +9,6 @@ function Foretag() {
 
     return (
       <div className="flex flex-col items-center justify-center w-screen bg-gray-100">
-
       <div className="font-bold text-4xl mt-16">{t("company invite")}</div>
       <div className="max-w-screen rounded-xl w-60 border-2 border-forange my-12"></div>
       <a href="mailto:farad@fsektionen.se" className="text-gray-700 text-2xl font-bold hover:text-gray-300">Mejla farad@fsektionen.se!</a>
