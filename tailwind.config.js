@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "false", // for now
   theme: {
     extend: {
       colors: {
@@ -15,7 +16,6 @@ export default {
       },
     },
   },
-  darkMode: 'media',
   plugins: [
   ],
 };
