@@ -1,5 +1,6 @@
 import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 import fsek from '../assets/fseklogga.svg';
+import { t } from 'i18next';
 
 function Footer() {
     return (
@@ -25,7 +26,7 @@ function Footer() {
           </a>
         </div>
         <div className="text-center my-6 font-bold">
-          <div className="text-2xl">Kontakt:</div>
+          <div className="text-2xl">{t("contact")}:</div>
           <a href="mailto:farad@fsektionen.se" className="text-black dark:text-white text-2xl font-bold hover:text-gray-300">farad@fsektionen.se</a>
         </div>
         <a href="https://fsektionen.se/" className="flex justify-end">
