@@ -1,11 +1,13 @@
 import { useTranslation } from 'react-i18next';
+import farad2024 from '../assets/farad2024.png';
+
 
 function Home() {
     const { t } = useTranslation();
 
     return (
       <div>
-        <div className="relative flex flex-col items-center justify-center w-screen h-96 bg-[url('src/assets/farad2024.png')] bg-cover bg-center">
+        <div className="relative flex flex-col items-center justify-center w-screen h-96 bg-cover bg-center" style={{ backgroundImage: `url(${farad2024})` }}>
           <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
           <h1 className="relative text-white text-2xl my-8 font-bold text-start z-10">
             {t("welcome")} <div className="text-7xl text-forange">FARAD</div>
