@@ -9,7 +9,7 @@ function Studenter() {
           {t("students")}        
       </h1>
       <p className="text-lg font-bold text-black">
-          {t("work")} <a href="https://forms.gle/HxVdxwSJN6AF2z6Q9" className="text-blue dark:text-graytext font-bold hover:text-blue">länk till formulär</a>
+          {t("work")} <a href="https://forms.gle/HxVdxwSJN6AF2z6Q9" className="font-bold hover:text-blue">länk till formulär</a>
       </p>
       <p className="font-bold text-black">
           {t("moreinfo")}
