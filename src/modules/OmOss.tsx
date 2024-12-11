@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 function OmOss() {
     const { t } = useTranslation();
     return (
-      <div className="flex flex-col items-center justify-center w-screen bg-gray-100">
+      <div className="flex flex-col items-center justify-center w-screen">
         <h1 className="text-4xl font-bold text-forange">
           {t("weare")}
 
