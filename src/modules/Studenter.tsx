@@ -1,4 +1,3 @@
-import smiley from '../assets/smiley.png';
 import { useTranslation } from 'react-i18next';
 
 function Studenter() {
