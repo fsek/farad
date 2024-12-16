@@ -20,6 +20,14 @@ const enTranslation = {
     "home1": "Welcome to FARAD - The F-section's Career Day. The F-section is one of the largest sections at LTH and consists of the programs in Engineering Physics, Engineering Mathematics, and Engineering Nanoscience.",
     "home2": "Our students are highly skilled and are at the forefront of many areas of study, including modeling and programming, which we are very proud of!",
     "home3": "Come to FARAD and witness the future of engineering. Your company's success starts here! Secure your spot now and make an impact in the world of technology.",
+    "what happens": "What happens during FARAD?",
+    "svl lunch": "Lunch lecture with SVL",
+    "january": "January",
+    "fairday": "Day of the fair!",
+    "foajen": "The foyer of the mathematics building",
+    "if lunch": "Lunch lecture with If",
+    "banquett": "Banquet",
+    "gasque": "The banquet hall in the union house",
 
     //Company page
     "companies": "Företag",

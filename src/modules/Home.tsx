@@ -2,6 +2,11 @@ import { useTranslation } from 'react-i18next';
 import lightbringer from '../assets/lightbringer.png';
 import ericsson from '../assets/ericsson.png';
 import iflogo from '../assets/iflogo.png';
+import faradlogo from '../assets/FARAD-logga.png';
+import svl from '../assets/lth_logo.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock } from '@fortawesome/free-solid-svg-icons';
+import { faMapLocation } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -37,6 +42,66 @@ function Home() {
         <div className="text-2xl mb-4">{t("home1")}</div>
         <div className="text-2xl mb-4">{t("home2")}</div>
         <div className="text-2xl mb-4">{t("home3")}</div>
+      </div>
+
+      <div className="flex flex-col px-40 mb-20 items-center justify-center w-screen">
+        <div className="font-bold text-6xl mt-16">{t("what happens")}</div>
+        <div className="max-w-screen rounded-xl w-60 border-2 border-forange my-12"></div>
+        <div className="grid grid-rows w-full max-w-screen mx-auto">
+          <div className="my-8 mx-20 bg-white rounded-xl shadow-xl flex">
+            <div className="bg-orange-500 text-white flex items-center justify-center w-60 px-4 py-6 rounded-l-xl">
+              <div className="text-2xl font-bold">29 {t("january")}</div>
+            </div>
+            <div className="flex-1 my-4 mx-12">
+              <div className="font-bold text-3xl">{t("svl lunch")}</div>
+              <div className="font-bold text-xl"><FontAwesomeIcon icon={faClock} size="1x" /> 12:15 - 13:00</div>
+              <div className="font-bold text-xl"><FontAwesomeIcon icon={faMapLocation} size="1x" /> MH:Gårdingsalen</div>
+            </div>
+            <div className= "flex justify-center items-center">
+               <img src={svl} alt="If" className="h-20 w-auto m-4 mr-12" />
+            </div>
+          </div>
+
+          <div className="my-8 mx-20 bg-white rounded-xl shadow-xl flex">
+            <div className="bg-orange-500 text-white flex items-center justify-center w-60 px-4 py-6 rounded-l-xl">
+              <div className="text-2xl font-bold">30 {t("january")}</div>
+            </div>
+            <div className="flex-1 my-4 mx-12">
+              <div className="font-bold text-3xl">{t("fairday")}</div>
+              <div className="font-bold text-xl"><FontAwesomeIcon icon={faClock} size="1x" /> 10:00 - 15:00</div>
+              <div className="font-bold text-xl"><FontAwesomeIcon icon={faMapLocation} size="1x" /> {t("foajen")}</div>
+            </div>
+            <div className= "flex justify-center items-center">
+               <img src={faradlogo} alt="If" className="h-20 w-auto m-4 mr-12" />
+            </div>
+          </div>
+          
+          <div className="my-8 mx-20 bg-white rounded-xl shadow-xl flex">
+            <div className="bg-orange-500 text-white flex items-center justify-center w-60 px-4 py-6 rounded-l-xl">
+              <div className="text-2xl font-bold">30 {t("january")}</div>
+            </div>
+            <div className="flex-1 my-4 mx-12">
+              <div className="font-bold text-3xl">{t("if lunch")}</div>
+              <div className="font-bold text-xl"><FontAwesomeIcon icon={faClock} size="1x" /> 12:15 - 13:00</div>
+              <div className="font-bold text-xl"><FontAwesomeIcon icon={faMapLocation} size="1x" /> MA:7</div>
+            </div>
+            <div className= "flex justify-center items-center">
+               <img src={iflogo} alt="If" className="h-20 w-auto m-4 mr-12" />
+            </div>
+          </div>
+
+          <div className="my-8 mx-20 bg-white rounded-xl shadow-xl flex">
+            <div className="bg-orange-500 text-white flex items-center justify-center w-60 px-4 py-6 rounded-l-xl">
+              <div className="text-2xl font-bold">30 {t("january")}</div>
+            </div>
+            <div className="flex-1 my-4 mx-12">
+              <div className="font-bold text-3xl">{t("banquett")}</div>
+              <div className="font-bold text-xl"><FontAwesomeIcon icon={faClock} size="1x" /> 18:00 - 22:00</div>
+              <div className="font-bold text-xl"><FontAwesomeIcon icon={faMapLocation} size="1x" /> {t("gasque")}</div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
       <div className="flex flex-col px-40 mb-20 items-center justify-center w-screen">
