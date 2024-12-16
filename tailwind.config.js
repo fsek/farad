@@ -13,6 +13,9 @@ export default {
           dark: '#CC4700',    // Darker variant if needed
         },
       },
+      textColor: {
+        DEFAULT: '#000000', // Default text color for all elements
+      },
     },
   },
   plugins: [

@@ -14,6 +14,12 @@ const enTranslation = {
     "dates": "30 January 2025",
     "quick desc": "Farad is the F-guild at LTH's career fair, where companies get the opportunity to get in touch with students from the programs Engineering Physics, Engineering Mathematics and Engineering Nanoscience.",
     "signup": "Register your company by contacting",
+    "to companies": "Are you interested in participating in FARAD 2025? We offer packages to suit all budgets and levels of ambition. Learn more under 'For Companies'!",
+    "prios": "Our priority partners",
+    "what": "What is FARAD?",
+    "home1": "Welcome to FARAD - the career fair of the F-section. FARAD exists to serve as an information hub between the job market and students, offering you an opportunity to enhance your employer brand among our future engineers and to inform them about why your company is an attractive employer.",
+    "home2": "The F-section is one of the largest sections at LTH and consists of the programs Engineering Physics, Engineering Mathematics, and Engineering Nanoscience. Our students are highly skilled and at the forefront in many fields of study, including modeling and programming, which we are very proud of!",
+    "home3": "FARAD offers you a unique opportunity to network with Sweden's most promising engineering students and showcase your company's vision and career opportunities. Secure your spot now!",
 
     //Company page
     "companies": "Företag",

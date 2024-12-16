@@ -14,6 +14,12 @@ const seTranslation = {
     "dates": "30 Januari 2025",
     "quick desc": "Farad är F-sektionen på LTHs arbetsmarknadsmässa, där företag får möjligheten att komma i kontakt med studenter från programmen Teknisk fysik, Teknisk matematik och Teknisk nanovetenskap.",
     "signup": "Anmäl ditt företag genom att mejla",
+    "to companies": "Är ni intresserade av att delta på FARAD 2025? För mer information om våra paket och erbjudanden läs under \"För företag\"!",
+    "prios": "Våra priopartners",
+    "what": "Vad är FARAD?",
+    "home1": "Välkommen till FARAD - F-sektionens arbetsmarknadsdagar. FARAD finns till för att fungera som ett informationsnav mellan arbetsmarknaden och studenter och är en möjlighet för er att förbättra ert anställningsvarumärke gentemot våra blivande ingenjörer och informera om varför just ni är attraktiva som arbetsgivare",
+    "home2": "F-sektionen är en av de största sektionerna på LTH och består av programmen teknisk fysik, teknisk matematik och teknisk nanovetenskap. Våra studenter är väldigt kompetenta och ligger i framkant inom många studieområden, bland annat modellering och programmering, vilket vi är mycket stolta över!",
+    "home3": "FARAD ger er en unik möjlighet att nätverka med Sveriges mest lovande ingenjörsstudenter och visa upp ert företags vision och karriärmöjligheter. Säkra eran plats nu!",
 
     //Company page
     "companies": "Företag",

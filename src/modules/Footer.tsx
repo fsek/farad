@@ -1,10 +1,11 @@
 import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 import fsek from '../assets/fseklogga.svg';
-import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+    const { t } = useTranslation();
     return (
-      <footer className="grid grid-cols-3 gap-4 content-center w-full">
+      <footer className="grid grid-cols-3 gap-4 content-center w-full bg-gray-100">
         <div className="mx-16 my-10 flex justify-start space-x-6">
           <a
             href="https://www.linkedin.com/company/f-sek-farad"
