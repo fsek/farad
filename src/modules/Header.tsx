@@ -10,7 +10,7 @@ function Header() {
       i18n.changeLanguage(language);
     };
 
-    const [currentLang, setCurrentLang] = useState('en');
+    const [currentLang, setCurrentLang] = useState('se');
 
     const toggleLanguage = () => {
       setCurrentLang((prevLang) => {
