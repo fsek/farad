@@ -10,12 +10,12 @@ function Header() {
       i18n.changeLanguage(language);
     };
 
-    const [currentLang, setCurrentLang] = useState('en');
+    const [currentLang, setCurrentLang] = useState('se');
 
     const toggleLanguage = () => {
       setCurrentLang((prevLang) => {
-        const newLang = prevLang === 'en' ? 'se' : 'en';
-        changeLanguage(newLang);  // Make sure this is triggered after the state is updated
+        const newLang = (prevLang === 'en' ? 'se' : 'en');
+        changeLanguage(newLang);
         return newLang;
       });
     };
@@ -35,10 +35,10 @@ function Header() {
           </nav>
 
           <button onClick={toggleLanguage} className="mx-4 p-0 w-16 h-12 flex justify-center items-center">
-            {currentLang === 'se' ? (
-                <ReactCountryFlag countryCode="GB" svg className="w-full h-full text-4xl"/>
-            ) : (
+            {currentLang === 'en' ? (
                 <ReactCountryFlag countryCode="SE" svg className="w-full h-full text-4xl"/>
+            ) : (
+                <ReactCountryFlag countryCode="GB" svg className="w-full h-full text-4xl"/>
             )}
           </button>
 
