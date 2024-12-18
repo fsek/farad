@@ -21,6 +21,7 @@ const enTranslation = {
     "home2": "The F-section is one of the largest sections at LTH and consists of the programs Engineering Physics, Engineering Mathematics, and Engineering Nanoscience. Our students are highly skilled and at the forefront in many fields of study, including modeling and programming, which we are very proud of!",
     "home3": "FARAD offers you a unique opportunity to network with Sweden's most promising engineering students and showcase your company's vision and career opportunities. Secure your spot now!",
     "what happens": "What happens during FARAD?",
+    "lightbringer lunch": "Lunch lecture with Lightbringer",
     "svl lunch": "Lunch lecture with SVL",
     "january": "January",
     "fairday": "Day of the fair!",

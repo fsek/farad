@@ -21,6 +21,7 @@ const seTranslation = {
     "home2": "F-sektionen är en av de största sektionerna på LTH och består av programmen teknisk fysik, teknisk matematik och teknisk nanovetenskap. Våra studenter är väldigt kompetenta och ligger i framkant inom många studieområden, bland annat modellering och programmering, vilket vi är mycket stolta över!",
     "home3": "FARAD ger er en unik möjlighet att nätverka med Sveriges mest lovande ingenjörsstudenter och visa upp ert företags vision och karriärmöjligheter. Säkra eran plats nu!",
     "what happens": "Vad händer under FARAD?",
+    "lightbringer lunch": "Lunchföreläsning med Lightbringer",
     "svl lunch": "Lunchföreläsning med SVL",
     "january": "Januari",
     "fairday": "Mässdagen!",
