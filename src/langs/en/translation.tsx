@@ -65,7 +65,10 @@ const enTranslation = {
     "moreinfo": "More info coming soon",
 
     //About page
-    "weare": "We are the project group!"
+    "weare": "We are the project group!",
+
+    //Exhibitors
+    "exhibitors": "Exhibitors"
 }
   
 export default enTranslation;
