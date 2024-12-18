@@ -66,7 +66,10 @@ const seTranslation = {
     "moreinfo": "Mer info kommer",
 
     //About page
-    "weare": "Vi är projektgruppen!"
+    "weare": "Vi är projektgruppen!",
+
+    //Exhibitors
+    "exhibitors": "Utställare"
 }
       
 export default seTranslation;
