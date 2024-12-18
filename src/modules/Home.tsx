@@ -48,12 +48,27 @@ function Home() {
         <div className="font-bold text-6xl mt-16">{t("what happens")}</div>
         <div className="max-w-screen rounded-xl w-60 border-2 border-forange my-12"></div>
         <div className="grid grid-rows w-full max-w-screen mx-auto">
+
+        <div className="my-8 mx-20 bg-white rounded-xl shadow-xl flex">
+            <div className="bg-orange-500 text-white flex items-center justify-center w-60 px-4 py-6 rounded-l-xl">
+              <div className="text-2xl font-bold">28 {t("january")}</div>
+            </div>
+            <div className="flex-1 my-4 mx-12">
+              <div className="font-bold text-2xl">{t("lightbringer lunch")}</div>
+              <div className="font-bold text-xl"><FontAwesomeIcon icon={faClock} size="1x" /> 12:15 - 13:00</div>
+              <div className="font-bold text-xl"><FontAwesomeIcon icon={faMapLocation} size="1x" /> MH:Gårdingsalen</div>
+            </div>
+            <div className= "flex justify-center items-center">
+               <img src={lightbringer} alt="If" className="h-16 w-auto m-4 mr-12" />
+            </div>
+          </div>
+
           <div className="my-8 mx-20 bg-white rounded-xl shadow-xl flex">
             <div className="bg-orange-500 text-white flex items-center justify-center w-60 px-4 py-6 rounded-l-xl">
               <div className="text-2xl font-bold">29 {t("january")}</div>
             </div>
             <div className="flex-1 my-4 mx-12">
-              <div className="font-bold text-3xl">{t("svl lunch")}</div>
+              <div className="font-bold text-2xl">{t("svl lunch")}</div>
               <div className="font-bold text-xl"><FontAwesomeIcon icon={faClock} size="1x" /> 12:15 - 13:00</div>
               <div className="font-bold text-xl"><FontAwesomeIcon icon={faMapLocation} size="1x" /> MH:Gårdingsalen</div>
             </div>
@@ -67,7 +82,7 @@ function Home() {
               <div className="text-2xl font-bold">30 {t("january")}</div>
             </div>
             <div className="flex-1 my-4 mx-12">
-              <div className="font-bold text-3xl">{t("fairday")}</div>
+              <div className="font-bold text-2xl">{t("fairday")}</div>
               <div className="font-bold text-xl"><FontAwesomeIcon icon={faClock} size="1x" /> 10:00 - 15:00</div>
               <div className="font-bold text-xl"><FontAwesomeIcon icon={faMapLocation} size="1x" /> {t("foajen")}</div>
             </div>
@@ -81,7 +96,7 @@ function Home() {
               <div className="text-2xl font-bold">30 {t("january")}</div>
             </div>
             <div className="flex-1 my-4 mx-12">
-              <div className="font-bold text-3xl">{t("if lunch")}</div>
+              <div className="font-bold text-2xl">{t("if lunch")}</div>
               <div className="font-bold text-xl"><FontAwesomeIcon icon={faClock} size="1x" /> 12:15 - 13:00</div>
               <div className="font-bold text-xl"><FontAwesomeIcon icon={faMapLocation} size="1x" /> MA:7</div>
             </div>
@@ -95,7 +110,7 @@ function Home() {
               <div className="text-2xl font-bold">30 {t("january")}</div>
             </div>
             <div className="flex-1 my-4 mx-12">
-              <div className="font-bold text-3xl">{t("banquett")}</div>
+              <div className="font-bold text-2xl">{t("banquett")}</div>
               <div className="font-bold text-xl"><FontAwesomeIcon icon={faClock} size="1x" /> 18:00 - 22:00</div>
               <div className="font-bold text-xl"><FontAwesomeIcon icon={faMapLocation} size="1x" /> {t("gasque")}</div>
             </div>
