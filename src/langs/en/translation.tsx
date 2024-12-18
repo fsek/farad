@@ -20,6 +20,14 @@ const enTranslation = {
     "home1": "Welcome to FARAD - the career fair of the F-section. FARAD exists to serve as an information hub between the job market and students, offering you an opportunity to enhance your employer brand among our future engineers and to inform them about why your company is an attractive employer.",
     "home2": "The F-section is one of the largest sections at LTH and consists of the programs Engineering Physics, Engineering Mathematics, and Engineering Nanoscience. Our students are highly skilled and at the forefront in many fields of study, including modeling and programming, which we are very proud of!",
     "home3": "FARAD offers you a unique opportunity to network with Sweden's most promising engineering students and showcase your company's vision and career opportunities. Secure your spot now!",
+    "what happens": "What happens during FARAD?",
+    "svl lunch": "Lunch lecture with SVL",
+    "january": "January",
+    "fairday": "Day of the fair!",
+    "foajen": "The foyer of the mathematics building",
+    "if lunch": "Lunch lecture with If",
+    "banquett": "Banquet",
+    "gasque": "The banquet hall in the union house",
 
     //Company page
     "companies": "Företag",

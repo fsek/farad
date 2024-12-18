@@ -20,6 +20,14 @@ const seTranslation = {
     "home1": "Välkommen till FARAD - F-sektionens arbetsmarknadsdagar. FARAD finns till för att fungera som ett informationsnav mellan arbetsmarknaden och studenter och är en möjlighet för er att förbättra ert anställningsvarumärke gentemot våra blivande ingenjörer och informera om varför just ni är attraktiva som arbetsgivare",
     "home2": "F-sektionen är en av de största sektionerna på LTH och består av programmen teknisk fysik, teknisk matematik och teknisk nanovetenskap. Våra studenter är väldigt kompetenta och ligger i framkant inom många studieområden, bland annat modellering och programmering, vilket vi är mycket stolta över!",
     "home3": "FARAD ger er en unik möjlighet att nätverka med Sveriges mest lovande ingenjörsstudenter och visa upp ert företags vision och karriärmöjligheter. Säkra eran plats nu!",
+    "what happens": "Vad händer under FARAD?",
+    "svl lunch": "Lunchföreläsning med SVL",
+    "january": "Januari",
+    "fairday": "Mässdagen!",
+    "foajen": "Matematikhusets foajé",
+    "if lunch": "Lunchföreläsning med If",
+    "banquett": "Bankett",
+    "gasque": "Gasquesalen i kårhuset",
 
     //Company page
     "companies": "Företag",
