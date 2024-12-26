@@ -65,6 +65,7 @@ const enTranslation = {
     "moreinfo": "More info coming soon",
 
     //About page
+    "project group": "The Project Group",
     "weare": "We are the project group!"
 }
   

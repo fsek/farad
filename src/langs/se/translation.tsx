@@ -66,6 +66,7 @@ const seTranslation = {
     "moreinfo": "Mer info kommer",
 
     //About page
+    "project group": "Projektgruppen",
     "weare": "Vi är projektgruppen!"
 }
       
