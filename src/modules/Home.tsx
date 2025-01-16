@@ -59,7 +59,7 @@ function Home() {
               <div className="font-bold text-xl"><FontAwesomeIcon icon={faMapLocation} size="1x" /> MH:Gårdingsalen</div>
             </div>
             <div className= "flex justify-center items-center">
-               <img src={lightbringer} alt="If" className="h-16 w-auto m-4 mr-12" />
+               <img src={lightbringer} alt="If" className="h-20 w-auto max-w-80 m-4 mr-12" />
             </div>
           </div>
 
@@ -73,7 +73,7 @@ function Home() {
               <div className="font-bold text-xl"><FontAwesomeIcon icon={faMapLocation} size="1x" /> MH:Gårdingsalen</div>
             </div>
             <div className= "flex justify-center items-center">
-               <img src={svl} alt="If" className="h-20 w-auto m-4 mr-12" />
+               <img src={svl} alt="If" className="h-20 w-auto max-w-80 m-4 mr-12" />
             </div>
           </div>
 
@@ -83,11 +83,11 @@ function Home() {
             </div>
             <div className="flex-1 my-4 mx-12">
               <div className="font-bold text-2xl">{t("fairday")}</div>
-              <div className="font-bold text-xl"><FontAwesomeIcon icon={faClock} size="1x" /> 10:00 - 15:00</div>
+              <div className="font-bold text-xl"><FontAwesomeIcon icon={faClock} size="1x" /> 10:00 - 16:00</div>
               <div className="font-bold text-xl"><FontAwesomeIcon icon={faMapLocation} size="1x" /> {t("foajen")}</div>
             </div>
             <div className= "flex justify-center items-center">
-               <img src={faradlogo} alt="If" className="h-20 w-auto m-4 mr-12" />
+               <img src={faradlogo} alt="If" className="h-20 w-auto max-w-80 m-4 mr-12" />
             </div>
           </div>
           
@@ -101,7 +101,7 @@ function Home() {
               <div className="font-bold text-xl"><FontAwesomeIcon icon={faMapLocation} size="1x" /> MA:7</div>
             </div>
             <div className= "flex justify-center items-center">
-               <img src={iflogo} alt="If" className="h-20 w-auto m-4 mr-12" />
+               <img src={iflogo} alt="If" className="h-20 w-auto max-w-80 m-4 mr-12" />
             </div>
           </div>
 
