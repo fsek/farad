@@ -56,7 +56,7 @@ function Home() {
             <div className="flex-1 my-4 mx-12">
               <div className="font-bold text-2xl">{t("lightbringer lunch")}</div>
               <div className="font-bold text-xl"><FontAwesomeIcon icon={faClock} size="1x" /> 12:15 - 13:00</div>
-              <div className="font-bold text-xl"><FontAwesomeIcon icon={faMapLocation} size="1x" /> MH:Gårdingsalen</div>
+              <div className="font-bold text-xl"><FontAwesomeIcon icon={faMapLocation} size="1x" /> MA:6</div>
             </div>
             <div className= "flex justify-center items-center">
                <img src={lightbringer} alt="If" className="h-20 w-auto max-w-80 m-4 mr-12" />
