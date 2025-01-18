@@ -66,6 +66,7 @@ const enTranslation = {
 
     //About page
     "weare": "We are the project group!",
+    "weare_extended": "We are the project group of FARAD 2025! We have marketed the fair, planned events, fixed the logistics, built a webpage, written the Alumni Calendar, scouted for hosts and invited all of the companies! We want to say a big thanks for this year to all of the companies and institutions who attended the fair and to all of our wonderful hosts that enabled the fair!",
 
     //Exhibitors
     "exhibitors": "Exhibitors",

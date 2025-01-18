@@ -39,7 +39,6 @@ function Home() {
       <div className="flex flex-col px-40 mb-20 items-center justify-center w-screen">
         <div className="font-bold text-6xl mt-16">{t("what")}</div>
         <div className="max-w-screen rounded-xl w-60 border-2 border-forange my-12"></div>
-        <div className="text-2xl mb-4">{t("home1")}</div>
         <div className="text-2xl mb-4">{t("home2")}</div>
         <div className="text-2xl mb-4">{t("home3")}</div>
       </div>

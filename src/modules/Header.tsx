@@ -31,7 +31,7 @@ function Header() {
           <nav className="flex space-x-6 ml-auto mr-10">
             <a href="/Utstallare" className="text-black text-lg font-bold hover:text-gray-300">{t("exhibitors")}</a>
             <a href="/Foretag" className="text-black text-lg font-bold hover:text-gray-300">{t("for companies")}</a>
-          {/*  <a href="/Studenter" className="text-black text-lg font-bold hover:text-gray-300">{t("for students")}</a> */}
+       {/*  <a href="/Studenter" className="text-black text-lg font-bold hover:text-gray-300">{t("for students")}</a> */}
             <a href="/OmOss" className="text-black text-lg font-bold hover:text-gray-300">{t("about")}</a>
           </nav>
 
