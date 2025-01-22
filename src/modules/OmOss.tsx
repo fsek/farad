@@ -5,15 +5,20 @@ function OmOss() {
     const { t } = useTranslation();
     return (
       <div className="flex flex-col items-center justify-center w-screen">
-        <h1 className="text-4xl font-bold text-forange">
-          {t("weare")}
-
-        </h1>
-        <div className="lg:container">
-          <img src={farad_2025} alt="Very handsome photo of FARAD 2025" className="h-auto w-2/3 mx-auto m-4" />
+          <div className="font-bold text-4xl mt-16">{t("weare")}</div>
+          <div className="grid grid-rows-1 max-w-screen mx-20 mb-20">
+              <div className="my-8 bg-white rounded-xl shadow-xl py-6 px-20">
+                  <div className="space-x-4">
+                      <div className="lg:container">
+                          <img src={farad_2025} alt="Very handsome photo of FARAD 2025" className="h-auto w-5/6 mx-auto m-4" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <div className="mx-10 my-8 text-center text-lg text-black">
+              <div className="text-xl mb-4">{t("weare_extended")}</div>
+            </div>
         </div>
-        <p className="text-black font-bold">{t("moreinfo")}</p>
-      </div>
   );
 }
 

@@ -67,6 +67,7 @@ const seTranslation = {
 
     //About page
     "weare": "Vi är projektgruppen!",
+    "weare_extended": "Det är vi som är projektgruppen i FARAD 2025! Vi har marknadsfört, ordnat event, fixat logistik, byggt hemsida, skrivit alumnikalender, lejt värdar och bjudit in alla företag. Stort tack för detta år till alla företag och institutioner som velat komma och alla fantastiska värdar som hjälpt oss!",
 
     //Exhibitors
     "exhibitors": "Utställare",
