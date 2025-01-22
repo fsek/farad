@@ -51,19 +51,19 @@ function Utstallare() {
                     </Box_funcs>
                 </div>
                 <div>
-                    <CompanyBox foretag={"If"} foretagImg={iflogo} onClick={() => handleBoxClick("If", iflogo, "")}></CompanyBox>
+                    <CompanyBox foretag={"If"} foretagImg={iflogo} onClick={() => handleBoxClick("If", iflogo, t("if_desc"))}></CompanyBox>
                     <Box_funcs isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)}>
                         <p>{popupContent}</p>
                     </Box_funcs>
                 </div>
                 <div>
-                    <CompanyBox foretag={"Lightbringer"} foretagImg={lightbringer} onClick={() => handleBoxClick("Lightbringer", lightbringer, "")}></CompanyBox>
+                    <CompanyBox foretag={"Lightbringer"} foretagImg={lightbringer} onClick={() => handleBoxClick("Lightbringer", lightbringer, t("lightbringer_desc"))}></CompanyBox>
                     <Box_funcs isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)}>
                         <p>{popupContent}</p>
                     </Box_funcs>
                 </div>
                 <div>
-                    <CompanyBox foretag={"Axis communications"} foretagImg={axis} onClick={() => handleBoxClick("Axis communcations", axis, "")}></CompanyBox>
+                    <CompanyBox foretag={"Axis communications"} foretagImg={axis} onClick={() => handleBoxClick("Axis communcations", axis, t("axis_desc"))}></CompanyBox>
                     <Box_funcs isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)}>
                         <p>{popupContent}</p>
                     </Box_funcs>
