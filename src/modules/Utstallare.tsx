@@ -16,6 +16,7 @@ import svl from '../assets/svl.png';
 import regler from '../assets/regler.png';
 import netcompany from '../assets/netcompany.png';
 import sentianai from '../assets/sentianai.png';
+import linc from '../assets/linc.png';
 
 
 
@@ -124,6 +125,12 @@ function Utstallare() {
                 </div>
                 <div>
                     <CompanyBox foretag={"SVL"} foretagImg={svl} onClick={() => handleBoxClick("SVL", svl, t("svl_desc"))}></CompanyBox>
+                    <Box_funcs isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)}>
+                        <p>{popupContent}</p>
+                    </Box_funcs>
+                </div>
+                <div>
+                    <CompanyBox foretag={"LINC LUND"} foretagImg={linc} onClick={() => handleBoxClick("LINC LUND", linc, t("linc_desc"))}></CompanyBox>
                     <Box_funcs isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)}>
                         <p>{popupContent}</p>
                     </Box_funcs>
