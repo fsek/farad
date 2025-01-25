@@ -16,6 +16,7 @@ import svl from '../assets/svl.png';
 import regler from '../assets/regler.png';
 import netcompany from '../assets/netcompany.png';
 import sentianai from '../assets/sentianai.png';
+import linc from '../assets/linc.png';
 
 
 
@@ -51,19 +52,19 @@ function Utstallare() {
                     </Box_funcs>
                 </div>
                 <div>
-                    <CompanyBox foretag={"If"} foretagImg={iflogo} onClick={() => handleBoxClick("If", iflogo, "")}></CompanyBox>
+                    <CompanyBox foretag={"If"} foretagImg={iflogo} onClick={() => handleBoxClick("If", iflogo, t("if_desc"))}></CompanyBox>
                     <Box_funcs isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)}>
                         <p>{popupContent}</p>
                     </Box_funcs>
                 </div>
                 <div>
-                    <CompanyBox foretag={"Lightbringer"} foretagImg={lightbringer} onClick={() => handleBoxClick("Lightbringer", lightbringer, "")}></CompanyBox>
+                    <CompanyBox foretag={"Lightbringer"} foretagImg={lightbringer} onClick={() => handleBoxClick("Lightbringer", lightbringer, t("lightbringer_desc"))}></CompanyBox>
                     <Box_funcs isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)}>
                         <p>{popupContent}</p>
                     </Box_funcs>
                 </div>
                 <div>
-                    <CompanyBox foretag={"Axis communications"} foretagImg={axis} onClick={() => handleBoxClick("Axis communcations", axis, "")}></CompanyBox>
+                    <CompanyBox foretag={"Axis communications"} foretagImg={axis} onClick={() => handleBoxClick("Axis communcations", axis, t("axis_desc"))}></CompanyBox>
                     <Box_funcs isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)}>
                         <p>{popupContent}</p>
                     </Box_funcs>
@@ -124,6 +125,12 @@ function Utstallare() {
                 </div>
                 <div>
                     <CompanyBox foretag={"SVL"} foretagImg={svl} onClick={() => handleBoxClick("SVL", svl, t("svl_desc"))}></CompanyBox>
+                    <Box_funcs isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)}>
+                        <p>{popupContent}</p>
+                    </Box_funcs>
+                </div>
+                <div>
+                    <CompanyBox foretag={"LINC LUND"} foretagImg={linc} onClick={() => handleBoxClick("LINC LUND", linc, t("linc_desc"))}></CompanyBox>
                     <Box_funcs isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)}>
                         <p>{popupContent}</p>
                     </Box_funcs>
