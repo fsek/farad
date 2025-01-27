@@ -11,6 +11,7 @@ jobs:
     container:
       image: node:20-alpine
     steps:
+      - uses: actions/checkout@v4
       - run: npm ci
       - run: npm run build
       - name: Get SSH key and set permissions
