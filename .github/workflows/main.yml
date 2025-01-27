@@ -11,11 +11,15 @@ jobs:
     container:
       image: node:20-alpine
     steps:
-     - run: npm ci
-     - run: npm run build
-     - name: Get SSH key and set permissions
-       run: |
-         mkdir -p ~/.ssh
-         echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa
-     - name: Deploy using SCP
-     - run: scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa -r ./dist/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/test
+      - run: npm ci
+      - run: npm run build
+      - name: Get SSH key and set permissions
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+      - name: Deploy using SCP
+        run: scp -o StrictHostKeyChecking=no \
+               -i ~/.ssh/id_rsa \
+               -r ./dist/* \
+               ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/test
