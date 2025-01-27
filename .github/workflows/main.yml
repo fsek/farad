@@ -19,6 +19,6 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
       - name: Deploy using SCP
         run: scp -o StrictHostKeyChecking=no \
-               -i ~/.ssh/id_rsa \
+               ~/.ssh/id_rsa \
                -r ./dist/* \
                ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/test
