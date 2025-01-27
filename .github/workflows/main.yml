@@ -12,7 +12,7 @@ jobs:
       image: node:20-alpine
     steps:
       - uses: actions/checkout@v4
-      - run: apk add -y scp 
+      - run: apk add scp 
       - run: npm ci
       - run: npm run build
       - name: Get SSH key and set permissions
