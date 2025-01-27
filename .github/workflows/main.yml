@@ -9,23 +9,17 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      
+      - uses: actions/checkout@v4      
       - name: Install Dependencies
         run: npm ci
       
       - name: Build Project
         run: npm run build
-      
-      - name: Get SSH key and set permissions
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
 
-      - name: Deploy using SCP
-        run: |
-          scp -o StrictHostKeyChecking=no \
-              -i ~/.ssh/id_rsa \
-              -r ./dist/* \
-              ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/test
+      - uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "./dist/*"
+          target: "/test"
