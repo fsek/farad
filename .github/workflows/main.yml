@@ -8,11 +8,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    container:
-      image: node:20-alpine
     steps:
       - uses: actions/checkout@v4
-      - run: apk add scp 
       - run: npm ci
       - run: npm run build
       - name: Get SSH key and set permissions
