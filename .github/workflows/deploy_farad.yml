@@ -6,6 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
+  DOCKERFILE: .devcontainer/Dockerfile
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
@@ -34,13 +35,15 @@ jobs:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-          file: .devcontainer/Dockerfile
+          file: DOCKERFILE
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
         uses: docker/metadata-action@v5.6.1
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          file: DOCKERFILE
+
       
       - name: Build and push Docker image
         id: push
@@ -50,6 +53,7 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          file: DOCKERFILE
       
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v2
