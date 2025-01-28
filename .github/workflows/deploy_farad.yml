@@ -35,25 +35,22 @@ jobs:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-          file: DOCKERFILE
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
         uses: docker/metadata-action@v5.6.1
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          file: DOCKERFILE
-
       
       - name: Build and push Docker image
         id: push
         uses: docker/build-push-action@v6.13.0
         with:
           context: .
+          file: env.DOCKERFILE
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          file: DOCKERFILE
       
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v2
