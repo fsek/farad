@@ -1,20 +1,25 @@
 FROM node:20-alpine
 
-# To get fresh apk
-RUN apk update && apk upgrade
+# Set the working directory inside the container
+WORKDIR /src
 
-#iputils is for ping
-RUN apk add git openssh curl iputils
+# Update and install necessary packages
+RUN apk update && apk upgrade && apk add git openssh curl iputils
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of your application code
+COPY . .
 
 # Expose the Vite development server port
 EXPOSE 5173
 
-ENV ENV = development
+# Set environment variable correctly
+ENV ENV=development
 
 # Start the development server
-CMD ["npm", "run", "dev", "--", "--host", "127.0.0.1"]
-
-
-#RUN npm install -D prettier prettier-plugin-tailwindcss
-
-
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
