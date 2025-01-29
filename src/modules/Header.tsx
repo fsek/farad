@@ -2,6 +2,7 @@ import logo from '../assets/FARAD-logga.png';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import ReactCountryFlag from "react-country-flag"
+import { Link } from 'react-router-dom';
 
 function Header() {
     const { t, i18n } = useTranslation();
@@ -23,16 +24,16 @@ function Header() {
 
     return (
         <header className="sticky top-0 z-20 shadow-md flex justify-start items-center w-screen bg-white">
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img src={logo} alt="Logo" className="h-20 w-auto m-4" />
-          </a>
+          </Link>
           <h1 className="text-2xl font-bold">FARAD 2025</h1>
 
           <nav className="flex space-x-6 ml-auto mr-10">
-            <a href="/Utstallare" className="text-black text-lg font-bold hover:text-gray-300">{t("exhibitors")}</a>
-            <a href="/Foretag" className="text-black text-lg font-bold hover:text-gray-300">{t("for companies")}</a>
-       {/*  <a href="/Studenter" className="text-black text-lg font-bold hover:text-gray-300">{t("for students")}</a> */}
-            <a href="/OmOss" className="text-black text-lg font-bold hover:text-gray-300">{t("about")}</a>
+            <Link to="/Utstallare" className="text-black text-lg font-bold hover:text-gray-300">{t("exhibitors")}</Link>
+            <Link to="/Foretag" className="text-black text-lg font-bold hover:text-gray-300">{t("for companies")}</Link>
+       {/*  <Link to="/Studenter" className="text-black text-lg font-bold hover:text-gray-300">{t("for students")}</Link> */}
+            <Link to="/OmOss" className="text-black text-lg font-bold hover:text-gray-300">{t("about")}</Link>
           </nav>
 
           <button onClick={toggleLanguage} className="mx-4 p-0 w-16 h-12 flex justify-center items-center">

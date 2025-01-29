@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  DOCKERFILE: .devcontainer/Dockerfile
+  DOCKERFILE: Dockerfile
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
