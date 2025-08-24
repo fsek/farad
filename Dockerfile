@@ -1,19 +1,13 @@
-FROM node:20 AS vite
-
+FROM node:24-alpine AS builder
 WORKDIR /app
-
-COPY ./package*.json ./
-
-RUN npm ci
-
+COPY package.json pnpm-lock.yaml ./
+RUN npm install -g pnpm && pnpm install --frozen-lockfile
 COPY . .
+RUN pnpm build
 
-RUN npm run build
-
-FROM nginx:alpine
-
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-COPY --from=vite /app/dist /usr/share/nginx/html
-
-CMD ["nginx", "-g", "daemon off;"]
+FROM node:24-alpine
+WORKDIR /app
+COPY package.json pnpm-lock.yaml ./
+RUN npm install -g pnpm && pnpm install --frozen-lockfile --prod
+COPY --from=builder /app/build ./build
+ENTRYPOINT ["node", "build/index.js"]

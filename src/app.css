@@ -1,0 +1,6 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-sans: InterVariable;
+	--font-sans--font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
