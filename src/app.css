@@ -1,6 +1,8 @@
 @import 'tailwindcss';
+@plugin "@tailwindcss/typography";
 
 @theme {
 	--font-sans: InterVariable;
 	--font-sans--font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+	--color-forange: rgb(247, 139, 72);
 }

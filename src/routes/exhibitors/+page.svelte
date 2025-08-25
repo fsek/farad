@@ -5,7 +5,10 @@
 </script>
 
 {#each exhibitors as exhibitor (exhibitor.slug)}
-	<section id={exhibitor.slug} class="mx-auto my-16 max-w-4xl px-4">
+	<section
+		id={exhibitor.slug}
+		class="mx-auto my-16 max-w-4xl px-4 after:mx-auto after:my-8 after:block after:h-px after:max-w-20 after:bg-neutral-300 after:content-[''] md:after:hidden"
+	>
 		<div class="flex flex-col items-center gap-x-12 gap-y-4 md:flex-row">
 			<img
 				src={exhibitor.logo}
@@ -13,7 +16,7 @@
 				class="max-h-24 w-32 flex-shrink-0 object-contain md:max-h-32 md:w-48 lg:w-64"
 			/>
 			<div>
-				<p class="font-regular about max-w-[50ch] text-lg text-neutral-800">
+				<p class="about prose-lg max-w-[50ch] text-neutral-700">
 					<Markdown source={exhibitor.about()} />
 				</p>
 			</div>

@@ -3,7 +3,9 @@
 	import { setLocale, locales, getLocale } from '$lib/paraglide/runtime';
 </script>
 
-<header class="flex h-16 items-center justify-between border-b border-neutral-200 px-4">
+<div
+	class="relative z-10 flex h-16 items-center justify-between border-b border-neutral-200 bg-white px-4"
+>
 	<nav>
 		<a href="/">logo</a>
 		<a href="/exhibitors">{m.exhibitors()}</a>
@@ -18,4 +20,4 @@
 			{/if}
 		{/each}
 	</div>
-</header>
+</div>
