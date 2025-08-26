@@ -6,11 +6,9 @@
 <!-- must be bg-white so that the text color can be inverted (since body is not bg-white) -->
 <section class="relative mx-auto my-8 max-w-6xl bg-white px-4 md:my-24">
 	<svg
-		width="481"
-		height="479"
 		viewBox="0 0 481 479"
 		xmlns="http://www.w3.org/2000/svg"
-		class="absolute -bottom-16 -left-32 z-0 animate-spin"
+		class="absolute right-2 -bottom-4 z-0 w-48 animate-spin md:right-16 md:w-72"
 		style="animation-duration: 30s"
 	>
 		<path
@@ -24,7 +22,7 @@
 	</h1>
 
 	<p
-		class="relative max-w-[45ch] text-xl leading-relaxed text-white mix-blend-difference sm:text-2xl md:text-3xl"
+		class="relative max-w-[45ch] text-xl leading-normal text-white mix-blend-difference sm:text-2xl md:text-3xl"
 	>
 		{m.about_farad()}
 	</p>

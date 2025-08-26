@@ -7,7 +7,7 @@
 {#each exhibitors as exhibitor (exhibitor.slug)}
 	<section
 		id={exhibitor.slug}
-		class="mx-auto my-16 max-w-4xl px-4 after:mx-auto after:my-8 after:block after:h-px after:max-w-20 after:bg-neutral-300 after:content-[''] md:after:hidden"
+		class="mx-auto my-16 max-w-4xl px-4 after:mx-auto after:my-8 after:block after:h-px after:w-full after:bg-neutral-300 after:content-[''] max-md:after:max-w-20 md:after:my-16"
 	>
 		<div class="flex flex-col items-center gap-x-12 gap-y-4 md:flex-row">
 			<img

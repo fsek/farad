@@ -16,3 +16,11 @@
 <Navbar />
 
 {@render children?.()}
+
+<footer class="bg-neutral-100">
+	<div class="mx-auto max-w-6xl px-4 py-8">
+		<p class="text-md text-center font-medium">
+			<a href="mailto:farad@fsektionen.se" class="hover:underline">farad@fsektionen.se</a>
+		</p>
+	</div>
+</footer>
