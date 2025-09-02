@@ -20,7 +20,7 @@
 	<nav>
 		<ul class="flex items-center gap-8">
 			<li>
-				<a href="/" class="text-xl font-bold text-forange">FARAD</a>
+				<a href="/"><img src="/farad.png" alt="FARAD" class="h-8 object-contain sm:h-10" /></a>
 			</li>
 			{#each routes as { href, name } (href)}
 				<li>
