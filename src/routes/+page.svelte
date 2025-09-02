@@ -8,7 +8,7 @@
 	<svg
 		viewBox="0 0 481 479"
 		xmlns="http://www.w3.org/2000/svg"
-		class="absolute right-2 -bottom-4 z-0 w-48 animate-spin md:right-16 md:w-72"
+		class="absolute right-2 -bottom-4 z-0 w-48 animate-spin md:right-10 md:w-72"
 		style="animation-duration: 30s"
 	>
 		<path
@@ -17,7 +17,9 @@
 		/>
 	</svg>
 
-	<h1 class="relative mb-6 text-6xl font-bold text-white mix-blend-difference md:text-9xl">
+	<h1
+		class="relative mb-6 -ml-[0.07em] text-6xl font-bold text-white mix-blend-difference md:text-9xl"
+	>
 		FARAD
 	</h1>
 
