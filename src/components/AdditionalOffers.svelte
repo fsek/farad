@@ -21,19 +21,20 @@
 	] as const;
 </script>
 
-<section class="mx-auto my-16 max-w-6xl px-4 md:my-32">
-	<h2 class="text-3xl font-semibold md:text-5xl">{m.additional_offers()}</h2>
+<section class="mx-auto mt-16 mb-8 max-w-6xl px-4 md:my-32">
+	<h2 class="text-3xl font-semibold max-md:mb-8 md:text-5xl">{m.additional_offers()}</h2>
 	{#each additional as item (item.title)}
-		<div class="my-12 flex gap-4 max-md:flex-col md:my-8 md:items-center md:gap-8">
+		<div class="items-center gap-8 md:my-8 md:flex">
 			<div
-				class="flex shrink-0 flex-col justify-end gap-2 rounded-xl font-semibold max-md:w-80 md:min-h-64 md:basis-sm md:gap-4 md:bg-neutral-950 md:p-8 md:text-white lg:basis-lg"
+				class="flex shrink-0 basis-sm flex-col justify-end rounded-xl font-semibold md:min-h-64 md:gap-4 md:bg-neutral-950 md:p-8 md:text-white lg:basis-lg"
 			>
 				<div class="text-xl md:text-3xl lg:text-4xl">{item.title}</div>
-				<div class="text-sm md:text-xl lg:text-2xl">{item.price}</div>
+				<div class="text-sm max-md:text-neutral-700 md:text-xl lg:text-2xl">{item.price}</div>
 			</div>
-			<div class="text-lg text-neutral-700 md:text-xl">
+			<div class="mt-4 text-lg text-neutral-700 md:text-xl">
 				{item.description}
 			</div>
+			<hr class="my-8 h-px border-0 bg-neutral-200 md:hidden" />
 		</div>
 	{/each}
 </section>

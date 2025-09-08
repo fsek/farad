@@ -4,6 +4,10 @@
 	import { exhibitors } from '$lib/exhibitors';
 </script>
 
+<svelte:head>
+	<title>{m.exhibitors()} | FARAD</title>
+</svelte:head>
+
 {#each exhibitors as exhibitor (exhibitor.slug)}
 	<section
 		id={exhibitor.slug}

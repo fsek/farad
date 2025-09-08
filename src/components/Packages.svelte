@@ -101,6 +101,6 @@
 	}
 
 	.pricing-table :global(th) {
-		@apply p-4 pl-0 text-left font-semibold text-neutral-900;
+		@apply p-4 pl-0 text-left leading-tight font-semibold text-neutral-900;
 	}
 </style>

@@ -4,6 +4,10 @@
 	import Exhibitors from '../components/Exhibitors.svelte';
 </script>
 
+<svelte:head>
+	<title>FARAD</title>
+</svelte:head>
+
 <!-- must be bg-white so that the text color can be inverted (since body is not bg-white) -->
 <section class="relative mx-auto my-8 max-w-6xl bg-white px-4 md:my-24">
 	<div class="absolute -top-4 right-8 z-0 w-24 rotate-6 md:w-48 lg:w-72 xl:-right-8">
