@@ -11,7 +11,7 @@
 		{
 			lang: 'en',
 			url: '/Price%20information%20FARAD%202025.pdf',
-			name: 'Pricing information FARAD 2025'
+			name: 'Price information FARAD 2025'
 		}
 	];
 
