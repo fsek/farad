@@ -21,7 +21,8 @@
 	] as const;
 </script>
 
-<section class="mx-auto my-16 max-w-6xl px-4">
+<section class="mx-auto my-16 max-w-6xl px-4 md:my-32">
+	<h2 class="text-3xl font-semibold md:text-5xl">{m.additional_offers()}</h2>
 	{#each additional as item (item.title)}
 		<div class="my-12 flex gap-4 max-md:flex-col md:my-8 md:items-center md:gap-8">
 			<div

@@ -34,7 +34,7 @@
 	"extended": "Utökad",
 	"significantly_extended": "Kraftigt utökad",
 	"business_lounge_tickets": "Biljetter till företagslounge",
-	"breakfast_lunch_and_coffee": "Frukost, lunch och kaffe",
+	"breakfast_lunch_and_coffee": "Frukost, lunch och kaffe ingår.",
 	"extended_fair_space": "Utökad mässyta",
 	"student": "student",
 	"contact_meeting": "Kontakt\u00ADsamtal",
@@ -42,5 +42,7 @@
 	"for_n_students": "för {n} studenter",
 	"lunch_lecture_desc": "En föreläsning från 12:15 till 13:00 för ca 150 studenter där just ert företag får chansen att dels fånga upp studenter i åk 4–5 samt introducera er för studenter i åk 1–3. Vi kan med gott samvete garantera att minst 70–100 studenter kommer dyka upp.",
 	"n_sqm_additional_booth_space": "{n} m² utökad monteryta.",
-	"contact_meeting_desc": "Ert företag tillhandahåller en kravprofil för studenter ni vill komma i kontakt med. Projektgruppen levererar 5 studenter som möter kravprofilen och förser er med ett lugnt rum för samtalen."
+	"contact_meeting_desc": "Ert företag tillhandahåller en kravprofil för studenter ni vill komma i kontakt med. Projektgruppen levererar 5 studenter som möter kravprofilen och förser er med ett lugnt rum för samtalen.",
+	"additional_offers": "Ytterligare erbjudanden",
+	"price_pdf_desc": "Mer information om våra paket och tillval finns i följande dokument."
 }

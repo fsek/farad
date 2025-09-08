@@ -42,6 +42,14 @@
 	>
 		{m.about_farad()}
 	</p>
+
+	<div class="mt-8 md:mt-12">
+		<a
+			href="/company"
+			class="mt:px-6 mt:py-4 rounded-lg bg-neutral-950 px-4 py-3 text-sm font-semibold text-white shadow md:text-lg"
+			>{m.for_companies()} ->
+		</a>
+	</div>
 </section>
 
 <Exhibitors />

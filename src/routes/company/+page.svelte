@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { m } from '$lib/paraglide/messages.js';
-	import AdditionalOfferings from '../../components/AdditionalOfferings.svelte';
+	import AdditionalOffers from '../../components/AdditionalOffers.svelte';
 	import Packages from '../../components/Packages.svelte';
+	import PricingDocuments from '../../components/PricingDocuments.svelte';
 </script>
 
 <section class="mx-auto my-16 max-w-6xl px-4">
@@ -12,4 +13,6 @@
 
 <Packages />
 
-<AdditionalOfferings />
+<AdditionalOffers />
+
+<PricingDocuments />
