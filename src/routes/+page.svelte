@@ -22,7 +22,7 @@
 		<div
 			class="absolute top-1/2 left-1/2 flex -translate-1/2 flex-col items-center text-center leading-none font-semibold text-orange-900"
 		>
-			<span class="text-4xl md:text-7xl lg:text-8xl" style="font-feature-settings: 'cv04'"
+			<span class="text-4xl md:text-7xl lg:text-9xl" style="font-feature-settings: 'cv04'"
 				>29{#if getLocale() === 'en'}<sup
 						class="-top-[1em] text-[50%] md:-top-[2.5em] md:text-[25%]">th</sup
 					>{/if}</span

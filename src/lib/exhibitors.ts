@@ -1,5 +1,3 @@
-import { m } from './paraglide/messages.js';
-
 export interface Exhibitor {
 	name: string;
 	about: () => string;

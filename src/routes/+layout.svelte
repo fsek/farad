@@ -13,14 +13,20 @@
 	<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 </svelte:head>
 
-<Navbar />
+<div class="flex min-h-screen flex-col">
+	<div class="flex-grow">
+		<Navbar />
 
-{@render children?.()}
-
-<footer class="bg-neutral-100">
-	<div class="mx-auto max-w-6xl px-4 py-8">
-		<p class="text-md text-center font-medium">
-			<a href="mailto:farad@fsektionen.se" class="hover:underline">farad@fsektionen.se</a>
-		</p>
+		{@render children?.()}
 	</div>
-</footer>
+
+	<footer class="bg-neutral-100">
+		<div class="mx-auto max-w-6xl px-4 py-8">
+			<p class="text-md text-center font-medium">
+				<a href="mailto:farad@fsektionen.se" class="hover:underline">farad@fsektionen.se</a>
+			</p>
+
+			<img src="/fsek.svg" alt="F-sektionen" class="mx-auto mt-4 h-8 object-contain sm:h-10" />
+		</div>
+	</footer>
+</div>

@@ -23,7 +23,7 @@
 			<img
 				src={exhibitor.logo}
 				alt={exhibitor.name}
-				class="max-h-24 object-contain grayscale group-hover:grayscale-0"
+				class="max-h-24 object-contain grayscale transition duration-1000 group-hover:scale-125 group-hover:rotate-180 group-hover:rotate-y-180 group-hover:grayscale-0"
 			/>
 		</a>
 	{/each}

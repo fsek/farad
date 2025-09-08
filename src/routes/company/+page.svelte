@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { m } from '$lib/paraglide/messages.js';
+	import AdditionalOfferings from '../../components/AdditionalOfferings.svelte';
+	import Packages from '../../components/Packages.svelte';
 </script>
 
 <section class="mx-auto my-16 max-w-6xl px-4">
@@ -7,3 +9,7 @@
 		{m.welcome_to_farad()}
 	</p>
 </section>
+
+<Packages />
+
+<AdditionalOfferings />
