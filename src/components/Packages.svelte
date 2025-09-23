@@ -4,85 +4,63 @@
 
 	const packs = [
 		{
+			badgeClass: 'border',
 			name: m.base_package,
 			price: 22_000,
-			badgeClass: 'border border-neutral-200'
+			features: [
+				m.n_sqm_booth_space({ n: 6 }),
+				m.ads_in_the_guilds_medias(),
+				m.n_farad_banquet_tickets({n: 2}),
+				m.n_business_lounge_tickets({ n: 2 }),
+				m.company_host_summary(),
+			]
 		},
 		{
+			badgeClass: 'border bg-neutral-100',
 			name: m.priority_package,
-			price: 24_000,
-			badgeClass: 'bg-neutral-200'
+			price: 30_000,
+			features: [
+				m.n_sqm_booth_space({ n: 8 }),
+				m.extended_ads_in_the_guilds_medias(),
+				m.priority_placement_fair(),
+				m.n_farad_banquet_tickets({n: 4}),
+				m.n_business_lounge_tickets({ n: 4 }),
+				m.company_host_summary()
+			]
 		},
 		{
+			badgeClass: 'bg-forange text-white shadow-lg',
 			name: m.main_sponsor,
-			price: 42_000,
-			badgeClass: 'bg-forange text-white'
+			price: m.contact_us(),
+			summary: m.main_sponsor_summary()
 		}
 	] as const;
 </script>
 
-<section class="mx-auto my-16 max-w-6xl px-4">
-	<table class="w-full table-auto">
-		<thead>
-			<tr>
-				<th></th>
-				{#each packs as pack (pack.name())}
-					<th class="p-1 pb-4">
-						<div
-							class={'flex min-h-24 w-24 flex-col justify-end gap-1 rounded-lg p-2 text-left sm:min-h-32 sm:w-40 sm:p-4 lg:min-h-48 lg:w-72 ' +
-								pack.badgeClass}
+<section class="mx-auto my-16 max-w-6xl gap-8 px-4 flex max-md:flex-col">
+	{#each packs as pack (pack.name())}
+		<div class={'flex-1 rounded-xl border-neutral-200 p-4 text-lg ' + pack.badgeClass}>
+			<div class="text-2xl font-semibold md:text-3xl">{pack.name()}</div>
+			<div class="mt-2 mb-4 text-xl font-medium">
+				{typeof pack.price === 'number' ? formatPrice(pack.price) : pack.price}
+			</div>
+			{#if 'features' in pack}
+				<h3 class="font-medium">Vad ingår</h3>
+				<ul>
+					{#each pack.features as feature (feature)}
+						<li
+							class="relative my-1 pl-6 before:absolute before:left-0 before:opacity-50 before:content-['✓']"
 						>
-							<span class="text-sm lg:text-lg">{pack.name()}</span>
-							<span class="text-md sm:text-2xl lg:text-4xl">{formatPrice(pack.price)}</span>
-						</div>
-					</th>
-				{/each}
-			</tr>
-		</thead>
-		<tbody class="pricing-table">
-			<tr>
-				<th>{m.booth_space()}</th>
-				<td>6&nbsp;m<sup>2</sup></td>
-				<td>6&nbsp;m<sup>2</sup></td>
-				<td>9&nbsp;m<sup>2</sup></td>
-			</tr>
-			<tr>
-				<th>{m.ads_in_the_guilds_medias()}</th>
-				<td>{m.yes()}</td>
-				<td>{m.extended()}</td>
-				<td>{m.significantly_extended()}</td>
-			</tr>
-			<tr>
-				<th>{m.farad_banquet_tickets()}</th>
-				<td>2</td>
-				<td>2</td>
-				<td>4</td>
-			</tr>
-			<tr>
-				<th
-					>{m.business_lounge_tickets()}
-					<p class="mt-1 text-xs font-normal text-neutral-700 md:mt-2 md:text-sm">
-						{m.breakfast_lunch_and_coffee()}
-					</p>
-				</th>
-				<td>2</td>
-				<td>6</td>
-				<td>6</td>
-			</tr>
-			<tr>
-				<th>{m.priority_placement_fair()}</th>
-				<td>-</td>
-				<td>{m.yes()}</td>
-				<td>{m.yes()}</td>
-			</tr>
-			<tr>
-				<th>{m.lunch_lecture()}</th>
-				<td>-</td>
-				<td>-</td>
-				<td>{m.yes()}</td>
-			</tr>
-		</tbody>
-	</table>
+							{feature}
+						</li>
+					{/each}
+				</ul>
+			{/if}
+			{#if 'summary' in pack}
+				<div class="mt-4">{pack.summary}</div>
+			{/if}
+		</div>
+	{/each}
 </section>
 
 <style>

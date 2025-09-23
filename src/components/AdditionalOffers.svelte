@@ -6,7 +6,7 @@
 		{
 			title: m.extended_fair_space(),
 			price: formatPrice(5_000),
-			description: m.n_sqm_additional_booth_space({ n: 9 })
+			description: m.n_sqm_additional_booth_space({ n: 2 })
 		},
 		{
 			title: m.lunch_lecture(),
@@ -14,9 +14,9 @@
 			description: m.lunch_lecture_desc()
 		},
 		{
-			title: m.contact_meeting(),
-			price: `${formatPrice(5_000)} ${m.for_n_students({ n: 5 })} + ${formatPrice(1_000)}/${m.additional_student()}`,
-			description: m.contact_meeting_desc()
+			title: m.student_session(),
+			price: formatPrice(3_000),
+			description: m.student_session_desc()
 		}
 	] as const;
 </script>
@@ -31,7 +31,7 @@
 				<div class="text-xl md:text-3xl lg:text-4xl">{item.title}</div>
 				<div class="text-sm max-md:text-neutral-700 md:text-xl lg:text-2xl">{item.price}</div>
 			</div>
-			<div class="mt-4 text-lg text-neutral-700 md:text-xl">
+			<div class="max-md:mt-4 text-lg text-neutral-700 md:text-xl">
 				{item.description}
 			</div>
 			<hr class="my-8 h-px border-0 bg-neutral-200 md:hidden" />
