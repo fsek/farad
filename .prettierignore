@@ -1,6 +1,9 @@
-node_modules
-dist
-.git
-.DS_Store
-Dockerfile
-docker-compose.yml
+# Package Managers
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+bun.lock
+bun.lockb
+
+# Miscellaneous
+/static/
