@@ -10,5 +10,6 @@ WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
 RUN npm install -g pnpm && pnpm install --frozen-lockfile --prod
 COPY --from=builder /app/build ./build
-EXPOSE 3000
+EXPOSE 80
+ENV PORT=80
 ENTRYPOINT ["node", "build/index.js"]
