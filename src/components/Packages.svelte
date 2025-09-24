@@ -10,9 +10,9 @@
 			features: [
 				m.n_sqm_booth_space({ n: 6 }),
 				m.ads_in_the_guilds_medias(),
-				m.n_farad_banquet_tickets({n: 2}),
+				m.n_farad_banquet_tickets({ n: 2 }),
 				m.n_business_lounge_tickets({ n: 2 }),
-				m.company_host_summary(),
+				m.company_host_summary()
 			]
 		},
 		{
@@ -23,7 +23,7 @@
 				m.n_sqm_booth_space({ n: 8 }),
 				m.extended_ads_in_the_guilds_medias(),
 				m.priority_placement_fair(),
-				m.n_farad_banquet_tickets({n: 4}),
+				m.n_farad_banquet_tickets({ n: 4 }),
 				m.n_business_lounge_tickets({ n: 4 }),
 				m.company_host_summary()
 			]
@@ -37,7 +37,7 @@
 	] as const;
 </script>
 
-<section class="mx-auto my-16 max-w-6xl gap-8 px-4 flex max-md:flex-col">
+<section class="mx-auto my-16 flex max-w-6xl gap-8 px-4 max-md:flex-col">
 	{#each packs as pack (pack.name())}
 		<div class={'flex-1 rounded-xl border-neutral-200 p-4 text-lg ' + pack.badgeClass}>
 			<div class="text-2xl font-semibold md:text-3xl">{pack.name()}</div>
@@ -45,7 +45,7 @@
 				{typeof pack.price === 'number' ? formatPrice(pack.price) : pack.price}
 			</div>
 			{#if 'features' in pack}
-				<h3 class="font-medium">Vad ingår</h3>
+				<h3 class="font-medium">{m.whats_included()}</h3>
 				<ul>
 					{#each pack.features as feature (feature)}
 						<li
