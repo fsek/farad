@@ -18,16 +18,9 @@ jobs:
       packages: write
       attestations: write
       id-token: write
-      #
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Install Dependencies
-        run: npm ci
-
-      - name: Build Project
-        run: npm run build
 
       - name: Log in to the Container registry
         uses: docker/login-action@v3.3.0
