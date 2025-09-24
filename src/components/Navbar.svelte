@@ -1,18 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { m } from '$lib/paraglide/messages';
 	import { setLocale, locales, getLocale } from '$lib/paraglide/runtime';
-
-	const routes = [
-		// {
-		// 	href: '/exhibitors',
-		// 	name: m.exhibitors
-		// },
-		{
-			href: '/company',
-			name: m.for_companies
-		}
-	] as const;
+	import { routes } from '$lib/routes';
 </script>
 
 <div class="relative z-10 flex h-16 items-center justify-between px-4">

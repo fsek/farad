@@ -31,7 +31,7 @@
 				<div class="text-xl md:text-3xl lg:text-4xl">{item.title}</div>
 				<div class="text-sm max-md:text-neutral-700 md:text-xl lg:text-2xl">{item.price}</div>
 			</div>
-			<div class="max-md:mt-4 text-lg text-neutral-700 md:text-xl">
+			<div class="text-lg text-neutral-700 max-md:mt-4 md:text-xl">
 				{item.description}
 			</div>
 			<hr class="my-8 h-px border-0 bg-neutral-200 md:hidden" />
