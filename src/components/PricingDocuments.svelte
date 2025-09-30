@@ -21,11 +21,11 @@
 
 <section class="mx-auto my-16 max-w-6xl px-4">
 	<p class="text-lg text-neutral-700 md:text-xl">{m.price_pdf_desc()}</p>
-	<div class="mt-4 flex gap-4">
+	<div class="mt-4 flex gap-4 flex-wrap">
 		{#each docs as doc (doc.url)}
 			<a
 				href={doc.url}
-				class="flex flex-col gap-1 rounded-lg border border-neutral-200 bg-neutral-50 p-4 hover:bg-neutral-100"
+				class="flex flex-col gap-1 rounded-lg border border-neutral-200 bg-neutral-50 p-4 hover:bg-neutral-100 w-64"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
