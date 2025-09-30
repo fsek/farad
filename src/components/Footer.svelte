@@ -18,7 +18,7 @@
 			title: m.follow_us(),
 			links: [
 				{ name: 'Instagram', href: 'https://instagram.com/fsek_farad' },
-				{ name: 'LinkedIn', href: 'https://www.linkedin.com/company/f-sek-farad' }
+				{ name: 'LinkedIn', href: 'https://www.linkedin.com/groups/3694965/' }
 			]
 		},
 		{
