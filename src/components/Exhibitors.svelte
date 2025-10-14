@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { exhibitors } from '$lib/exhibitors';
+	import { m } from '$lib/paraglide/messages';
 </script>
 
 <!--
@@ -14,19 +15,26 @@
   </div>
 </section> -->
 
-<section class="logo-grid mx-auto my-16 max-w-6xl items-center justify-center gap-8 px-4 md:gap-16">
-	{#each exhibitors as exhibitor (exhibitor.slug)}
-		<a
-			href={`/exhibitors#${exhibitor.slug}`}
-			class="group flex aspect-square items-center justify-center"
-		>
-			<img
-				src={exhibitor.logo}
-				alt={exhibitor.name}
-				class="max-h-24 object-contain grayscale transition duration-1000 group-hover:scale-125 group-hover:rotate-180 group-hover:rotate-y-180 group-hover:grayscale-0"
-			/>
-		</a>
-	{/each}
+<section class="mx-auto my-16 max-w-6xl px-4">
+	<h2 class="mb-16 text-3xl font-semibold md:text-5xl">{m.previous_exhibitors()}</h2>
+
+	<div class="logo-grid items-center justify-center gap-8 md:gap-16">
+		{#each exhibitors as exhibitor (exhibitor.slug)}
+			<!-- <a
+				href={`/exhibitors#${exhibitor.slug}`}
+				class="group flex aspect-video items-center justify-center"
+			>
+				<img
+					src={exhibitor.logo}
+					alt={exhibitor.name}
+					class="max-h-24 object-contain grayscale transition group-hover:scale-110 group-hover:grayscale-0"
+				/>
+			</a> -->
+			<div class="flex aspect-video items-center justify-center">
+				<img src={exhibitor.logo} alt={exhibitor.name} class="max-h-24 object-contain" />
+			</div>
+		{/each}
+	</div>
 </section>
 
 <style>

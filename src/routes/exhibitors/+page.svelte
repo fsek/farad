@@ -2,6 +2,7 @@
 	import Markdown from '@magidoc/plugin-svelte-marked';
 
 	import { exhibitors } from '$lib/exhibitors';
+	import { m } from '$lib/paraglide/messages';
 </script>
 
 <svelte:head>

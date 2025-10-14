@@ -35,15 +35,12 @@
 		</div>
 	</div>
 
-	<h1
-		class="relative mr-24 mb-6 -ml-[0.03em] text-6xl font-bold text-white mix-blend-difference md:mr-48 md:text-9xl lg:mr-72"
-	>
-		FARAD 2026
+	<h1 class="relative mr-24 mb-6 text-6xl font-bold md:mr-48 md:text-8xl lg:mr-72 lg:text-9xl">
+		<img src="/farad.png" alt="FARAD" class="inline-block h-[1.14em] object-contain align-[-22%]" />
+		2026
 	</h1>
 
-	<p
-		class="relative max-w-[42ch] text-xl leading-normal text-white mix-blend-difference sm:text-2xl md:text-3xl"
-	>
+	<p class="relative max-w-[42ch] text-xl leading-normal sm:text-2xl md:text-3xl">
 		{m.about_farad()}
 	</p>
 
@@ -55,5 +52,11 @@
 		</a>
 	</div>
 </section>
+
+<img
+	src="/environment.jpg"
+	alt="FARAD-banderoll på Matematikhuset"
+	class="h-72 w-full object-cover sm:h-128"
+/>
 
 <Exhibitors />
