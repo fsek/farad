@@ -36,7 +36,7 @@
 	</div>
 
 	<h1
-		class="relative mb-6 -ml-[0.03em] text-6xl font-bold text-white mix-blend-difference md:text-9xl"
+		class="relative mr-24 mb-6 -ml-[0.03em] text-6xl font-bold text-white mix-blend-difference md:mr-48 md:text-9xl lg:mr-72"
 	>
 		FARAD 2026
 	</h1>
