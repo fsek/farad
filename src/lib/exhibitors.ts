@@ -97,5 +97,47 @@ export const exhibitors: Exhibitor[] = [
 		about: m.linc_desc,
 		logo: '/exhibitors/linc.png',
 		slug: 'linc'
+	},
+	{
+		name: 'FOI',
+		about: () => '',
+		logo: '/exhibitors/foi.svg',
+		slug: 'foi'
+	},
+	{
+		name: 'CellaVision',
+		about: () => '',
+		logo: '/exhibitors/cellavision.png',
+		slug: 'cellavision'
+	},
+	{
+		name: 'Electrolux',
+		about: () => '',
+		logo: '/exhibitors/electrolux.png',
+		slug: 'electrolux'
+	},
+	{
+		name: 'ESA',
+		about: () => '',
+		logo: '/exhibitors/esa.svg',
+		slug: 'esa'
+	},
+	{
+		name: 'Formula Student',
+		about: () => '',
+		logo: '/exhibitors/fs.png',
+		slug: 'formula-student'
+	},
+	{
+		name: 'Unionen',
+		about: () => '',
+		logo: '/exhibitors/unionen.png',
+		slug: 'unionen'
+	},
+	{
+		name: 'Hitachi Energy',
+		about: () => '',
+		logo: '/exhibitors/hitachi.svg',
+		slug: 'hitachi-energy'
 	}
 ];

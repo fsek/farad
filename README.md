@@ -15,6 +15,6 @@ pnpm run dev -- --open
 
 # to do
 
-- [ ] bara coola företag
+- [x] coola företag
 - [ ] studentsida
 - [x] kontaktformulär
