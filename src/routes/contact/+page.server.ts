@@ -1,10 +1,12 @@
 import { redirect } from '@sveltejs/kit';
 import type { Actions } from '../company/$types';
 
-import { MM_WEBHOOK } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
 export const actions = {
 	default: async ({ request }) => {
+		const webhook = env.MM_WEBHOOK;
+
 		const data = await request.formData();
 
 		const name = data.get('name') || '-';
@@ -14,11 +16,11 @@ export const actions = {
 		const message = data.get('message') || '-';
 
 		try {
-			if (!MM_WEBHOOK) {
+			if (!webhook) {
 				throw new Error('Missing webhook URL');
 			}
 
-			const res = await fetch(MM_WEBHOOK, {
+			const res = await fetch(webhook, {
 				method: 'post',
 				headers: {
 					'content-type': 'application/json'
@@ -47,21 +49,20 @@ ${message}
 
 			// webhook failed, let's redirect to a mailto link instead
 
-			const params = new URLSearchParams();
-			params.append('subject', 'Farad Contact Form Submission');
-			params.append(
-				'body',
-				`${message}
+			let query = '';
+			query += 'subject=' + encodeURIComponent('Farad Contact Form Submission');
+			query +=
+				'&body=' +
+				encodeURIComponent(`${message}
 
 ---
 
 Name: ${name}
 Email: ${email}
 Company: ${company}
-Phone: ${phone}`
-			);
+Phone: ${phone}`);
 
-			redirect(303, 'mailto:farad@fsektionen.se?' + params.toString());
+			redirect(303, 'mailto:farad@fsektionen.se?' + query);
 		}
 	}
 } satisfies Actions;
