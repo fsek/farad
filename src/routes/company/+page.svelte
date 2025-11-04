@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { m } from '$lib/paraglide/messages.js';
 	import AdditionalOffers from '../../components/AdditionalOffers.svelte';
+	import ContactForm from '../../components/ContactForm.svelte';
 	import Packages from '../../components/Packages.svelte';
 	import PricingDocuments from '../../components/PricingDocuments.svelte';
 </script>
@@ -25,5 +26,7 @@
 		<a href="mailto:farad@fsektionen.se" class="underline">farad@fsektionen.se</a>!
 	</p>
 </section>
+
+<ContactForm />
 
 <PricingDocuments />

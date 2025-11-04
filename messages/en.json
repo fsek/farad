@@ -53,5 +53,12 @@
 	"follow_us": "Follow us",
 	"navigate": "Navigate",
 	"home": "Home",
-	"previous_exhibitors": "Previous exhibitors"
+	"previous_exhibitors": "Previous exhibitors",
+	"name": "Name",
+	"email": "Email",
+	"phone": "Phone",
+	"company": "Company",
+	"message": "Message",
+	"send": "Send",
+	"contact_form_submitted": "Thank you for your message! We will get back to you as soon as possible."
 }

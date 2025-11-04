@@ -53,5 +53,12 @@
 	"follow_us": "Följ oss",
 	"navigate": "Navigera",
 	"home": "Startsida",
-	"previous_exhibitors": "Tidigare utställare"
+	"previous_exhibitors": "Tidigare utställare",
+	"name": "Namn",
+	"email": "E-post",
+	"phone": "Telefon",
+	"company": "Företag",
+	"message": "Meddelande",
+	"send": "Skicka",
+	"contact_form_submitted": "Tack för ditt meddelande! Vi återkommer så snart vi kan."
 }
