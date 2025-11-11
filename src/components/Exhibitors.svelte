@@ -15,7 +15,7 @@
   </div>
 </section> -->
 
-<section class="mx-auto my-16 max-w-6xl px-4">
+<section class="mx-auto my-16 max-w-6xl px-4 dark:bg-white dark:text-black">
 	<h2 class="mb-16 text-3xl font-semibold md:text-5xl">{m.previous_exhibitors()}</h2>
 
 	<div class="logo-grid items-center justify-center gap-8 md:gap-16">
