@@ -36,7 +36,7 @@
 	</div>
 
 	<h1 class="relative mr-24 mb-6 text-6xl font-bold md:mr-48 md:text-8xl lg:mr-72 lg:text-9xl">
-		<img src="/farad.png" alt="FARAD" class="inline-block h-[1.14em] object-contain align-[-22%]" />
+		<img src="/farad.svg" alt="FARAD" class="inline-block h-[1.13em] object-contain align-[-20%]" />
 		2026
 	</h1>
 
