@@ -9,7 +9,7 @@
 </svelte:head>
 
 <!-- must be bg-white so that the text color can be inverted (since body is not bg-white) -->
-<section class="relative mx-auto my-8 max-w-6xl bg-white px-4 md:my-24">
+<section class="relative mx-auto my-8 max-w-6xl px-4 md:my-24">
 	<div class="absolute -top-4 right-8 z-0 w-24 rotate-6 md:w-48 lg:w-72 xl:-right-8">
 		<svg
 			viewBox="0 0 481 479"
@@ -47,7 +47,7 @@
 	<div class="mt-8 md:mt-12">
 		<a
 			href="/company"
-			class="mt:px-6 mt:py-4 rounded-lg bg-neutral-950 px-4 py-3 text-sm font-semibold text-white shadow md:text-lg"
+			class="mt:px-6 mt:py-4 rounded-lg bg-neutral-950 px-4 py-3 text-sm font-semibold text-white shadow md:text-lg dark:bg-white dark:font-medium dark:text-black"
 			>{m.for_companies()} ->
 		</a>
 	</div>
@@ -56,7 +56,7 @@
 <img
 	src="/environment.jpg"
 	alt="FARAD-banderoll på Matematikhuset"
-	class="h-72 w-full object-cover sm:h-128"
+	class="h-72 w-full object-cover sm:h-128 dark:opacity-90"
 />
 
 <Exhibitors />

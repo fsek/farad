@@ -9,6 +9,6 @@
 	<input
 		{name}
 		{type}
-		class="rounded-lg border-1 border-neutral-300 p-4 text-lg font-normal max-sm:col-span-2"
+		class="rounded-lg border-1 border-neutral-300 p-4 text-lg font-normal max-sm:col-span-2 dark:border-neutral-600"
 	/>
 </label>

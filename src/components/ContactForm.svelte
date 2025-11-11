@@ -15,14 +15,14 @@
 			{m.message()}
 			<textarea
 				name="message"
-				class="rounded-lg border border-neutral-300 p-4 text-lg font-normal"
+				class="rounded-lg border border-neutral-300 p-4 text-lg font-normal dark:border-neutral-600"
 				rows="8"
 			></textarea>
 		</label>
 
 		<div class="col-span-2">
 			<button
-				class="rounded-lg bg-neutral-950 px-6 py-3 text-sm font-semibold text-white shadow md:text-lg"
+				class="rounded-lg bg-neutral-950 px-6 py-3 text-sm font-semibold text-white shadow md:text-lg dark:bg-white dark:font-medium dark:text-black"
 			>
 				{m.send()} ->
 			</button>

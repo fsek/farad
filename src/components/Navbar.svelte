@@ -13,7 +13,8 @@
 			{#each routes as { href, name } (href)}
 				<li>
 					<a
-						class={'hover:text-neutral-700 ' + (page.url.pathname === href ? 'underline' : '')}
+						class={'hover:text-neutral-700 dark:hover:text-neutral-300 ' +
+							(page.url.pathname === href ? 'underline' : '')}
 						{href}>{name()}</a
 					>
 				</li>

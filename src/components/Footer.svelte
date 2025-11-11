@@ -33,7 +33,9 @@
 	] as const;
 </script>
 
-<footer class="border-t border-neutral-200 bg-neutral-50">
+<footer
+	class="border-t border-neutral-200 bg-neutral-50 dark:border-neutral-700 dark:bg-neutral-900"
+>
 	<div class="mx-auto flex max-w-6xl flex-wrap gap-8 px-4 py-16">
 		{#each groups as group (group.title)}
 			<div class="basis-40 md:basis-64">
@@ -41,7 +43,9 @@
 				<ul>
 					{#each group.links as { name, href } (href)}
 						<li class="my-2">
-							<a {href} class="text-neutral-700 hover:text-black hover:underline"
+							<a
+								{href}
+								class="text-neutral-700 hover:text-black hover:underline dark:text-neutral-400 dark:hover:text-white"
 								>{typeof name === 'function' ? name() : name}</a
 							>
 						</li>
