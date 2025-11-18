@@ -15,12 +15,13 @@
   </div>
 </section> -->
 
-<section class="mx-auto my-16 max-w-6xl px-4 dark:bg-white dark:text-black">
-	<h2 class="mb-16 text-3xl font-semibold md:text-5xl">{m.previous_exhibitors()}</h2>
+<div class="overflow-hidden dark:bg-white dark:text-black">
+	<section class="mx-auto my-16 max-w-6xl px-4">
+		<h2 class="mb-16 text-3xl font-semibold md:text-5xl">{m.previous_exhibitors()}</h2>
 
-	<div class="logo-grid items-center justify-center gap-8 md:gap-16">
-		{#each exhibitors as exhibitor (exhibitor.slug)}
-			<!-- <a
+		<div class="logo-grid items-center justify-center gap-8 md:gap-16">
+			{#each exhibitors as exhibitor (exhibitor.slug)}
+				<!-- <a
 				href={`/exhibitors#${exhibitor.slug}`}
 				class="group flex aspect-video items-center justify-center"
 			>
@@ -30,12 +31,13 @@
 					class="max-h-24 object-contain grayscale transition group-hover:scale-110 group-hover:grayscale-0"
 				/>
 			</a> -->
-			<div class="flex aspect-video items-center justify-center">
-				<img src={exhibitor.logo} alt={exhibitor.name} class="max-h-24 object-contain" />
-			</div>
-		{/each}
-	</div>
-</section>
+				<div class="flex aspect-video items-center justify-center">
+					<img src={exhibitor.logo} alt={exhibitor.name} class="max-h-24 object-contain" />
+				</div>
+			{/each}
+		</div>
+	</section>
+</div>
 
 <style>
 	.logo-grid {

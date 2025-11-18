@@ -60,5 +60,13 @@
 	"company": "Företag",
 	"message": "Meddelande",
 	"send": "Skicka",
-	"contact_form_submitted": "Tack för ditt meddelande! Vi återkommer så snart vi kan."
+	"contact_form_submitted": "Tack för ditt meddelande! Vi återkommer så snart vi kan.",
+	"for_students": "För studenter",
+	"sok_vard": "Sök värd",
+	"sittningsvard": "Sittningsvärd",
+	"sittningsvard_desc": "Som sittningsvärd jobbar du på sittningarna som FARAD anordnar. Vi anordnar en fulsittning i december och en bankett efter mässan där vi utlovar en maxad eftersexa! Perfekt för dig som vill testa hur det är att jobba på sittning!",
+	"foretagsvard": "Företagsvärd",
+	"foretagsvard_desc": "Som företagsvärd får du ansvar för ett företag under mässdagen. Du välkomnar dem, hjälper dem under dagen och är deras kontaktperson. Du är också med och förbereder inför mässan samt städar efteråt. Perfekt om du har något företag du är extra intresserad av och en bra erfarenhet för cv:t!",
+	"servicevard": "Servicevärd",
+	"servicevard_desc": "Som servicevärd jobbar du i loungen, garderoben eller i infodisken. I loungen ser du till att företagsrepresentanterna har allt de behöver, och i infodisken hjälper du besökare att hitta rätt. Du hjälper även till med förberedelser och efterarbete kring mässan. Perfekt för dig som gillar service och vill bygga din erfarenhet!"
 }

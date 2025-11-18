@@ -6,6 +6,10 @@ export const routes = [
 	// 	name: m.exhibitors
 	// },
 	{
+		href: '/student',
+		name: m.for_students
+	},
+	{
 		href: '/company',
 		name: m.for_companies
 	}

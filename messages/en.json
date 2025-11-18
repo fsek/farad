@@ -60,5 +60,13 @@
 	"company": "Company",
 	"message": "Message",
 	"send": "Send",
-	"contact_form_submitted": "Thank you for your message! We will get back to you as soon as possible."
+	"contact_form_submitted": "Thank you for your message! We will get back to you as soon as possible.",
+	"for_students": "For students",
+	"sok_vard": "Get involved",
+	"sittningsvard": "Banquet Host",
+	"sittningsvard_desc": "As a banquet host, you work at the formal dinners that FARAD organizes. We host a fun dinner in December and a banquet after the fair where we promise an amazing after-party! Perfect for you who want to try what it's like to work at a sitting!",
+	"foretagsvard": "Company Host",
+	"foretagsvard_desc": "As a company host, you get responsibility for a company during the fair day. You welcome them, help them during the day and are their contact person. You also help prepare for the fair and clean up afterwards. Perfect if you have a company you're particularly interested in and a great experience for your CV!",
+	"servicevard": "Service Host",
+	"servicevard_desc": "As a service host, you work in the lounge, wardrobe or at the information desk. In the lounge, you make sure that company representatives have everything they need, and at the information desk you help visitors find their way. You also help with preparations and follow-up work around the fair. Perfect for you who like service and want to build your experience!"
 }
