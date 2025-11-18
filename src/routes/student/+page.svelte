@@ -4,7 +4,8 @@
 	import { Marquee } from '@selemondev/svelte-marquee';
 	import '@selemondev/svelte-marquee/dist/style.css';
 
-	const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScKPThUxIdwZHb37hKNNjKCi7GaHWddnVqNnVfvXxLpV8up-g/viewform?usp=header';
+	const GOOGLE_FORM_URL =
+		'https://docs.google.com/forms/d/e/1FAIpQLScKPThUxIdwZHb37hKNNjKCi7GaHWddnVqNnVfvXxLpV8up-g/viewform?usp=header';
 
 	const roles = [
 		{
@@ -32,10 +33,18 @@
 <img
 	src="/mh.jpg"
 	alt="FARAD-banderoll på Matematikhuset"
-	class="h-72 w-full object-cover sm:h-128 dark:opacity-90"
+	class="my-16 h-72 w-full object-cover sm:h-128 dark:opacity-90"
 />
 
 {#each roles as role, i (role.name)}
+	{#if i === 0}
+		<Marquee fade class="text-[15vh] leading-[1.2] font-semibold uppercase" speed={200} reverse>
+			{#each { length: 3 } as _, i (i)}
+				<div class="mx-[0.1em]">{m.sok_vard()}</div>
+			{/each}
+		</Marquee>
+	{/if}
+
 	<section
 		class="mx-auto my-16 flex max-w-7xl gap-8 px-4 max-md:flex-col md:my-24 md:items-center lg:gap-16"
 	>
@@ -46,7 +55,7 @@
 			</p>
 			<a
 				href={GOOGLE_FORM_URL}
-				class="md:px-6 md:py-4 inline-block mt-8 rounded-lg bg-forange px-4 py-3 text-sm font-semibold text-white shadow md:text-lg dark:bg-white dark:font-medium dark:text-black"
+				class="mt-8 inline-block rounded-lg bg-forange px-4 py-3 text-sm font-semibold text-white shadow md:px-6 md:py-4 md:text-lg dark:bg-white dark:font-medium dark:text-black"
 				>{m.sok_vard()} ->
 			</a>
 		</div>
@@ -61,7 +70,7 @@
 		speed={200}
 		reverse={i % 2}
 	>
-		{#each { length: 3 } as _}
+		{#each { length: 3 } as _, i (i)}
 			<div class="mx-[0.1em]">{m.sok_vard()}</div>
 		{/each}
 	</Marquee>

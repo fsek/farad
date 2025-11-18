@@ -44,16 +44,16 @@
 		{m.about_farad()}
 	</p>
 
-	<div class="mt-8 md:mt-12 flex flex-wrap gap-4">
+	<div class="mt-8 flex flex-wrap gap-4 md:mt-12">
 		<a
 			href="/student"
-			class="md:px-6 md:py-4 rounded-lg bg-neutral-950 px-4 py-3 text-sm font-semibold text-white shadow md:text-lg dark:bg-white dark:font-medium dark:text-black"
+			class="rounded-lg bg-neutral-950 px-4 py-3 text-sm font-semibold text-white shadow md:px-6 md:py-4 md:text-lg dark:bg-white dark:font-medium dark:text-black"
 			>{m.for_students()} ->
 		</a>
 
 		<a
 			href="/company"
-			class="md:px-6 md:py-4 rounded-lg bg-neutral-950 px-4 py-3 text-sm font-semibold text-white shadow md:text-lg dark:bg-white dark:font-medium dark:text-black"
+			class="rounded-lg bg-neutral-950 px-4 py-3 text-sm font-semibold text-white shadow md:px-6 md:py-4 md:text-lg dark:bg-white dark:font-medium dark:text-black"
 			>{m.for_companies()} ->
 		</a>
 	</div>
