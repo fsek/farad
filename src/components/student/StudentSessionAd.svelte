@@ -4,8 +4,7 @@
 	import Ericsson from './Ericsson.svelte';
 	import Triathlon from './Triathlon.svelte';
 
-	const GOOGLE_FORM_URL =
-		'https://docs.google.com/forms/d/e/1FAIpQLSetpi3TAo7X8XrugEp2q77-qN-JHkvqVVJDp3ygH4oZlBHqXQ/viewform';
+	const GOOGLE_FORM_URL = 'https://forms.gle/GS871W1mMj4v1YCb6';
 </script>
 
 <section class="mx-auto my-16 max-w-6xl space-y-12 px-4">
