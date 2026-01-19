@@ -6,7 +6,7 @@
 
 <div class="relative z-10 flex h-16 items-center justify-between px-4">
 	<nav>
-		<ul class="flex items-center gap-8">
+		<ul class="flex items-center gap-4 md:gap-8">
 			<li>
 				<a href="/"><img src="/farad.svg" alt="FARAD" class="h-8 object-contain sm:h-10" /></a>
 			</li>

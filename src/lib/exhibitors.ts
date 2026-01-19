@@ -5,92 +5,63 @@ export interface Exhibitor {
 	about: () => string;
 	logo: string;
 	slug: string;
+	priority?: boolean;
 }
 
 export const exhibitors: Exhibitor[] = [
 	{
-		name: 'Algorithma',
-		about: m.algorithma_desc,
-		logo: '/exhibitors/algorithma.png',
-		slug: 'algorithma'
+		name: 'Acconeer',
+		about: m.acconeer_desc,
+		logo: '/exhibitors/acconeer.png',
+		slug: 'acconeer'
 	},
 	{
 		name: 'Axis',
 		about: m.axis_desc,
 		logo: '/exhibitors/axis.png',
-		slug: 'axis'
+		slug: 'axis',
+		priority: true
 	},
 	{
-		name: 'CellaVision',
-		about: () => '',
-		logo: '/exhibitors/cellavision.png',
-		slug: 'cellavision'
-	},
-	{
-		name: 'D-fine',
-		about: m.dfine_desc,
-		logo: '/exhibitors/dfine.png',
-		slug: 'dfine'
-	},
-	{
-		name: 'Electrolux',
-		about: () => '',
-		logo: '/exhibitors/electrolux.png',
-		slug: 'electrolux'
+		name: 'Coherent',
+		about: m.coherent_desc,
+		logo: '/exhibitors/coherent.svg',
+		slug: 'coherent',
+		priority: true
 	},
 	{
 		name: 'Ericsson',
 		about: m.ericsson_desc,
 		logo: '/exhibitors/ericsson.png',
-		slug: 'ericsson'
-	},
-	{
-		name: 'ESA',
-		about: () => '',
-		logo: '/exhibitors/esa.svg',
-		slug: 'esa'
+		slug: 'ericsson',
+		priority: true
 	},
 	{
 		name: 'FOI',
-		about: () => '',
+		about: m.foi_desc,
 		logo: '/exhibitors/foi.svg',
-		slug: 'foi'
-	},
-	{
-		name: 'Hitachi Energy',
-		about: () => '',
-		logo: '/exhibitors/hitachi.svg',
-		slug: 'hitachi-energy'
-	},
-	{
-		name: 'IAESTE',
-		about: m.iaeste_desc,
-		logo: '/exhibitors/iaeste.png',
-		slug: 'iaeste'
+		slug: 'foi',
+		priority: true
 	},
 	{
 		name: 'If',
 		about: m.if_desc,
 		logo: '/exhibitors/if.png',
-		slug: 'if'
+		slug: 'if',
+		priority: true
 	},
 	{
-		name: 'Lightbringer',
-		about: m.lightbringer_desc,
-		logo: '/exhibitors/lightbringer.png',
-		slug: 'lightbringer'
+		name: 'Jane Street',
+		about: m.janestreet_desc,
+		logo: '/exhibitors/janestreet.png',
+		slug: 'jane-street',
+		priority: true
 	},
 	{
 		name: 'LINC',
 		about: m.linc_desc,
 		logo: '/exhibitors/linc.png',
 		slug: 'linc'
-	},
-	{
-		name: 'Lund Formula Student',
-		about: () => '',
-		logo: '/exhibitors/fs.png',
-		slug: 'formula-student'
 	},
 	{
 		name: 'Lunds lasercentrum',
@@ -105,39 +76,34 @@ export const exhibitors: Exhibitor[] = [
 		slug: 'nanolund'
 	},
 	{
-		name: 'Netcompany',
-		about: m.netcompany_desc,
-		logo: '/exhibitors/netcompany.png',
-		slug: 'netcompany'
+		name: 'Susquehanna',
+		about: m.susquehanna_desc,
+		logo: '/exhibitors/susquehanna.png',
+		slug: 'susquehanna'
 	},
 	{
-		name: 'Reglerteknik',
-		about: m.regler_desc,
-		logo: '/exhibitors/regler.png',
-		slug: 'reglerteknik'
+		name: 'Sustainalink',
+		about: m.sustainalink_desc,
+		logo: '/exhibitors/sustainalink.png',
+		slug: 'sustainalink'
 	},
 	{
-		name: 'SentianAI',
-		about: m.sentianai_desc,
-		logo: '/exhibitors/sentianai.png',
-		slug: 'sentianai'
+		name: 'Triathlon',
+		about: m.triathlon_desc,
+		logo: '/exhibitors/triathlon.svg',
+		slug: 'triathlon',
+		priority: true
 	},
 	{
-		name: 'SVL',
-		about: m.svl_desc,
-		logo: '/exhibitors/svl.png',
-		slug: 'svl'
+		name: 'Magma',
+		about: m.magma_desc,
+		logo: '/exhibitors/magma.png',
+		slug: 'magma'
 	},
 	{
-		name: 'Sveriges Ingenjörer',
-		about: m.sveing_desc,
-		logo: '/exhibitors/sveing.png',
-		slug: 'sveriges-ingenjorer'
-	},
-	{
-		name: 'Unionen',
-		about: () => '',
-		logo: '/exhibitors/unionen.png',
-		slug: 'unionen'
+		name: 'Big Science Sweden',
+		about: m.bigscience_desc,
+		logo: '/exhibitors/bss.png',
+		slug: 'big-science-sweden'
 	}
 ];

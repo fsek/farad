@@ -1,10 +1,10 @@
 import { m } from './paraglide/messages';
 
 export const routes = [
-	// {
-	// 	href: '/exhibitors',
-	// 	name: m.exhibitors
-	// },
+	{
+		href: '/exhibitors',
+		name: m.exhibitors
+	},
 	{
 		href: '/student',
 		name: m.for_students
