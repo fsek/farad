@@ -19,8 +19,7 @@ export const exhibitors: Exhibitor[] = [
 		name: 'Axis',
 		about: m.axis_desc,
 		logo: '/exhibitors/axis.png',
-		slug: 'axis',
-		priority: true
+		slug: 'axis'
 	},
 	{
 		name: 'Coherent',
