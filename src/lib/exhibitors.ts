@@ -22,6 +22,12 @@ export const exhibitors: Exhibitor[] = [
 		slug: 'axis'
 	},
 	{
+		name: 'Big Science Sweden',
+		about: m.bigscience_desc,
+		logo: '/exhibitors/bss.png',
+		slug: 'big-science-sweden'
+	},
+	{
 		name: 'Coherent',
 		about: m.coherent_desc,
 		logo: '/exhibitors/coherent.svg',
@@ -69,6 +75,12 @@ export const exhibitors: Exhibitor[] = [
 		slug: 'llc'
 	},
 	{
+		name: 'Magma',
+		about: m.magma_desc,
+		logo: '/exhibitors/magma.png',
+		slug: 'magma'
+	},
+	{
 		name: 'Nanolund',
 		about: m.nanolund_desc,
 		logo: '/exhibitors/nanolund.png',
@@ -87,22 +99,16 @@ export const exhibitors: Exhibitor[] = [
 		slug: 'sustainalink'
 	},
 	{
+		name: 'Sveriges Ingenjörer',
+		about: m.sveing_desc,
+		logo: '/exhibitors/sveing.png',
+		slug: 'sveriges-ingenjoerer'
+	},
+	{
 		name: 'Triathlon',
 		about: m.triathlon_desc,
 		logo: '/exhibitors/triathlon.svg',
 		slug: 'triathlon',
 		priority: true
-	},
-	{
-		name: 'Magma',
-		about: m.magma_desc,
-		logo: '/exhibitors/magma.png',
-		slug: 'magma'
-	},
-	{
-		name: 'Big Science Sweden',
-		about: m.bigscience_desc,
-		logo: '/exhibitors/bss.png',
-		slug: 'big-science-sweden'
 	}
 ];
