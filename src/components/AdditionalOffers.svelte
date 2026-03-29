@@ -26,12 +26,16 @@
 	{#each additional as item (item.title)}
 		<div class="items-center gap-8 md:my-8 md:flex">
 			<div
-				class="flex shrink-0 basis-sm flex-col justify-end rounded-xl font-semibold md:min-h-64 md:gap-4 md:bg-neutral-950 md:p-8 md:text-white lg:basis-lg"
+				class="dark:md:transparent flex shrink-0 basis-sm flex-col justify-end rounded-xl font-semibold md:min-h-64 md:gap-4 md:bg-neutral-950 md:p-8 md:text-white lg:basis-lg dark:md:border dark:md:border-neutral-700"
 			>
 				<div class="text-xl md:text-3xl lg:text-4xl">{item.title}</div>
-				<div class="text-sm max-md:text-neutral-700 md:text-xl lg:text-2xl">{item.price}</div>
+				<div
+					class="text-sm max-md:text-neutral-700 md:text-xl lg:text-2xl dark:max-md:text-neutral-300"
+				>
+					{item.price}
+				</div>
 			</div>
-			<div class="max-md:mt-4 text-lg text-neutral-700 md:text-xl">
+			<div class="text-lg text-neutral-700 max-md:mt-4 md:text-xl dark:text-neutral-300">
 				{item.description}
 			</div>
 			<hr class="my-8 h-px border-0 bg-neutral-200 md:hidden" />

@@ -20,17 +20,19 @@
 </script>
 
 <section class="mx-auto my-16 max-w-6xl px-4">
-	<p class="text-lg text-neutral-700 md:text-xl">{m.price_pdf_desc()}</p>
-	<div class="mt-4 flex gap-4">
+	<p class="text-lg text-neutral-700 md:text-xl dark:text-neutral-300">{m.price_pdf_desc()}</p>
+	<div class="mt-4 flex flex-wrap gap-4">
 		{#each docs as doc (doc.url)}
 			<a
 				href={doc.url}
-				class="flex flex-col gap-1 rounded-lg border border-neutral-200 bg-neutral-50 p-4 hover:bg-neutral-100"
+				class="flex w-64 flex-col gap-1 rounded-lg border border-neutral-200 bg-neutral-50 p-4 hover:bg-neutral-100 dark:border-neutral-600 dark:bg-neutral-800 dark:hover:bg-neutral-700"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
 				{doc.name}
-				<span class="text-sm text-neutral-500">PDF ({doc.lang.toLocaleUpperCase()})</span>
+				<span class="text-sm text-neutral-500 dark:text-neutral-400"
+					>PDF ({doc.lang.toLocaleUpperCase()})</span
+				>
 			</a>
 		{/each}
 	</div>

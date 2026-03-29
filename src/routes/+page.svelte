@@ -9,7 +9,7 @@
 </svelte:head>
 
 <!-- must be bg-white so that the text color can be inverted (since body is not bg-white) -->
-<section class="relative mx-auto my-8 max-w-6xl bg-white px-4 md:my-24">
+<section class="relative mx-auto my-8 max-w-6xl px-4 md:my-24">
 	<div class="absolute -top-4 right-8 z-0 w-24 rotate-6 md:w-48 lg:w-72 xl:-right-8">
 		<svg
 			viewBox="0 0 481 479"
@@ -35,25 +35,34 @@
 		</div>
 	</div>
 
-	<h1
-		class="relative mb-6 -ml-[0.03em] text-6xl font-bold text-white mix-blend-difference md:text-9xl"
-	>
-		FARAD
+	<h1 class="relative mr-24 mb-6 text-6xl font-bold md:mr-48 md:text-8xl lg:mr-72 lg:text-9xl">
+		<img src="/farad.svg" alt="FARAD" class="inline-block h-[1.13em] object-contain align-[-20%]" />
+		2026
 	</h1>
 
-	<p
-		class="relative max-w-[42ch] text-xl leading-normal text-white mix-blend-difference sm:text-2xl md:text-3xl"
-	>
+	<p class="relative max-w-[42ch] text-xl leading-normal sm:text-2xl md:text-3xl">
 		{m.about_farad()}
 	</p>
 
-	<div class="mt-8 md:mt-12">
+	<div class="mt-8 flex flex-wrap gap-4 md:mt-12">
+		<a
+			href="/student"
+			class="rounded-lg bg-neutral-950 px-4 py-3 text-sm font-semibold text-white shadow md:px-6 md:py-4 md:text-lg dark:bg-white dark:font-medium dark:text-black"
+			>{m.for_students()} ->
+		</a>
+
 		<a
 			href="/company"
-			class="mt:px-6 mt:py-4 rounded-lg bg-neutral-950 px-4 py-3 text-sm font-semibold text-white shadow md:text-lg"
+			class="rounded-lg bg-neutral-950 px-4 py-3 text-sm font-semibold text-white shadow md:px-6 md:py-4 md:text-lg dark:bg-white dark:font-medium dark:text-black"
 			>{m.for_companies()} ->
 		</a>
 	</div>
 </section>
+
+<img
+	src="/environment.jpg"
+	alt="FARAD-banderoll på Matematikhuset"
+	class="h-72 w-full object-cover sm:h-128 dark:opacity-90"
+/>
 
 <Exhibitors />

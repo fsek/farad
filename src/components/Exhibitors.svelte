@@ -1,43 +1,32 @@
 <script lang="ts">
 	import { exhibitors } from '$lib/exhibitors';
+	import { m } from '$lib/paraglide/messages';
+
+	const sorted = exhibitors.sort((a, b) => (b.priority ? 1 : 0) - (a.priority ? 1 : 0));
 </script>
 
-<!--
-<section>
-  <div class="grid grid-cols-4 justify-items-center">
-    {#each exhibitors as exhibitor}
-      <img src={exhibitor.logo} alt={exhibitor.name} />
-      <div class="col-span-3">
-        <p>{exhibitor.about()}</p>
-      </div>
-    {/each}
-  </div>
-</section> -->
+<div class="overflow-hidden dark:bg-white dark:text-black">
+	<section class="mx-auto my-16 max-w-6xl px-4">
+		<h2 class="mb-16 text-3xl font-semibold md:text-5xl">{m.exhibitors()}</h2>
 
-<section class="logo-grid mx-auto my-16 max-w-6xl items-center justify-center gap-8 px-4 md:gap-16">
-	{#each exhibitors as exhibitor (exhibitor.slug)}
-		<a
-			href={`/exhibitors#${exhibitor.slug}`}
-			class="group flex aspect-square items-center justify-center"
-		>
-			<img
-				src={exhibitor.logo}
-				alt={exhibitor.name}
-				class="max-h-24 object-contain grayscale transition duration-1000 group-hover:scale-125 group-hover:rotate-180 group-hover:rotate-y-180 group-hover:grayscale-0"
-			/>
-		</a>
-	{/each}
-</section>
+		<img src="/map.png" class="mb-16" alt={m.fair_map()} />
 
-<style>
-	.logo-grid {
-		--size: 5rem;
-
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(var(--size), 1fr));
-
-		@media (min-width: 768px) {
-			--size: 7rem;
-		}
-	}
-</style>
+		<div class="grid grid-cols-4 items-center justify-center gap-8 sm:grid-cols-6 md:gap-16">
+			{#each sorted as exhibitor (exhibitor.slug)}
+				<a
+					href={`/exhibitors#${exhibitor.slug}`}
+					class={[
+						'group flex aspect-video items-center justify-center',
+						exhibitor.priority && 'col-span-2'
+					]}
+				>
+					<img
+						src={exhibitor.logo}
+						alt={exhibitor.name}
+						class="aspect-video object-contain transition group-hover:scale-110"
+					/>
+				</a>
+			{/each}
+		</div>
+	</section>
+</div>

@@ -13,4 +13,8 @@ pnpm dev
 pnpm run dev -- --open
 ```
 
-- skryt
+# to do
+
+- [x] coola företag
+- [ ] studentsida
+- [x] kontaktformulär

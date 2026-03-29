@@ -1,30 +1,20 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { m } from '$lib/paraglide/messages';
 	import { setLocale, locales, getLocale } from '$lib/paraglide/runtime';
-
-	const routes = [
-		// {
-		// 	href: '/exhibitors',
-		// 	name: m.exhibitors
-		// },
-		{
-			href: '/company',
-			name: m.for_companies
-		}
-	] as const;
+	import { routes } from '$lib/routes';
 </script>
 
 <div class="relative z-10 flex h-16 items-center justify-between px-4">
 	<nav>
-		<ul class="flex items-center gap-8">
+		<ul class="flex items-center gap-4 md:gap-8">
 			<li>
-				<a href="/"><img src="/farad.png" alt="FARAD" class="h-8 object-contain sm:h-10" /></a>
+				<a href="/"><img src="/farad.svg" alt="FARAD" class="h-8 object-contain sm:h-10" /></a>
 			</li>
 			{#each routes as { href, name } (href)}
 				<li>
 					<a
-						class={'hover:text-neutral-700 ' + (page.url.pathname === href ? 'underline' : '')}
+						class={'hover:text-neutral-700 dark:hover:text-neutral-300 ' +
+							(page.url.pathname === href ? 'underline' : '')}
 						{href}>{name()}</a
 					>
 				</li>

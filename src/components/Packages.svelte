@@ -4,7 +4,7 @@
 
 	const packs = [
 		{
-			badgeClass: 'border',
+			badgeClass: 'border dark:border-neutral-600',
 			name: m.base_package,
 			price: 22_000,
 			features: [
@@ -16,7 +16,7 @@
 			]
 		},
 		{
-			badgeClass: 'border bg-neutral-100',
+			badgeClass: 'border bg-neutral-100 dark:bg-neutral-800',
 			name: m.priority_package,
 			price: 30_000,
 			features: [
@@ -39,7 +39,10 @@
 
 <section class="mx-auto my-16 flex max-w-6xl gap-8 px-4 max-md:flex-col">
 	{#each packs as pack (pack.name())}
-		<div class={'flex-1 rounded-xl border-neutral-200 p-4 text-lg ' + pack.badgeClass}>
+		<div
+			class={'flex-1 rounded-xl border-neutral-200 p-4 text-lg dark:border-neutral-600 ' +
+				pack.badgeClass}
+		>
 			<div class="text-2xl font-semibold md:text-3xl">{pack.name()}</div>
 			<div class="mt-2 mb-4 text-xl font-medium">
 				{typeof pack.price === 'number' ? formatPrice(pack.price) : pack.price}

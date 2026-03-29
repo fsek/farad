@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.css';
+	import Footer from '../components/Footer.svelte';
 	// import favicon from '$lib/assets/favicon.svg';
 	import Navbar from '../components/Navbar.svelte';
 
@@ -14,19 +15,11 @@
 </svelte:head>
 
 <div class="flex min-h-screen flex-col">
-	<div class="flex-grow">
+	<div class="grow">
 		<Navbar />
 
 		{@render children?.()}
 	</div>
 
-	<footer class="bg-neutral-100">
-		<div class="mx-auto max-w-6xl px-4 py-8">
-			<p class="text-md text-center font-medium">
-				<a href="mailto:farad@fsektionen.se" class="hover:underline">farad@fsektionen.se</a>
-			</p>
-
-			<img src="/fsek.svg" alt="F-sektionen" class="mx-auto mt-4 h-8 object-contain sm:h-10" />
-		</div>
-	</footer>
+	<Footer />
 </div>
