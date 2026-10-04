@@ -22,6 +22,7 @@
 		"@sveltejs/vite-plugin-svelte": "^6.2.4",
 		"@tailwindcss/typography": "^0.5.19",
 		"@tailwindcss/vite": "^4.1.17",
+		"@inlang/paraglide-js": "^2.25.1",
 		"eslint": "^9.39.1",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.13.0",
@@ -37,14 +38,5 @@
 		"typescript-eslint": "^8.47.0",
 		"vite": "^7.3.1"
 	},
-	"dependencies": {
-		"@inlang/paraglide-js": "^2.5.0",
-		"@selemondev/svelte-marquee": "^0.1.1"
-	},
-	"pnpm": {
-		"onlyBuiltDependencies": [
-			"@tailwindcss/oxide",
-			"esbuild"
-		]
-	}
+	"pnpm": {}
 }

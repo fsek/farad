@@ -27,7 +27,7 @@
 			class="absolute top-1/2 left-1/2 flex -translate-1/2 flex-col items-center text-center leading-none font-semibold text-orange-900"
 		>
 			<span class="text-4xl md:text-7xl lg:text-9xl" style="font-feature-settings: 'cv04'"
-				>29{#if getLocale() === 'en'}<sup
+				>28{#if getLocale() === 'en'}<sup
 						class="-top-[1em] text-[50%] md:-top-[2.5em] md:text-[25%]">th</sup
 					>{/if}</span
 			>
@@ -37,7 +37,7 @@
 
 	<h1 class="relative mr-24 mb-6 text-6xl font-bold md:mr-48 md:text-8xl lg:mr-72 lg:text-9xl">
 		<img src="/farad.svg" alt="FARAD" class="inline-block h-[1.13em] object-contain align-[-20%]" />
-		2026
+		2027
 	</h1>
 
 	<p class="relative max-w-[42ch] text-xl leading-normal sm:text-2xl md:text-3xl">
@@ -65,4 +65,4 @@
 	class="h-72 w-full object-cover sm:h-128 dark:opacity-90"
 />
 
-<Exhibitors />
+<!-- <Exhibitors /> -->

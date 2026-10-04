@@ -10,12 +10,12 @@
 		},
 		{
 			title: m.lunch_lecture(),
-			price: `${formatPrice(13_000)} + ${formatPrice(85)}/${m.student()}`,
+			price: `${formatPrice(15_000)} + ${formatPrice(90)}/${m.student()}`,
 			description: m.lunch_lecture_desc()
 		},
 		{
 			title: m.student_session(),
-			price: formatPrice(3_000),
+			price: formatPrice(5_000),
 			description: m.student_session_desc()
 		}
 	] as const;

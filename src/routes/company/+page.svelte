@@ -10,11 +10,22 @@
 	<title>{m.for_companies()} | FARAD</title>
 </svelte:head>
 
-<section class="mx-auto my-16 max-w-6xl px-4">
+<img
+	src="/mh.jpg"
+	alt="FARAD-banderoll på Matematikhuset"
+	class="mb-16 h-72 w-full object-cover sm:h-128 dark:opacity-90"
+/>
+<section class="mx-auto mt-16 mb-9 max-w-6xl px-4">
+	<!--<h1 class="mb-3 font-semibold sm:text-4xl md:text-5xl">{m.meet_future_engineers()}</h1>-->
 	<p
-		class="max-w-[45ch] text-xl leading-normal text-neutral-700 sm:text-2xl md:text-3xl dark:text-white"
+		class="mb-6 max-w-[45ch] text-xl leading-normal text-neutral-700 sm:text-2xl md:text-3xl dark:text-white"
 	>
 		{m.welcome_to_farad()}
+	</p>
+	<p
+		class="sm:text-1xl max-w-[50ch] leading-normal font-normal text-neutral-600 md:text-2xl dark:text-white"
+	>
+		{m.welcome_to_farad_desc()}
 	</p>
 </section>
 
