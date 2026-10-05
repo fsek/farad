@@ -1,6 +1,4 @@
 allowBuilds:
   es5-ext: true
   esbuild: true
-onlyBuiltDependencies:
-  - '@tailwindcss/oxide'
-  - 'esbuild'
+  tailwindcss/oxide: true
