@@ -5,13 +5,13 @@
 	const docs = [
 		{
 			lang: 'sv',
-			url: '/Prisinformation%20FARAD%202026.pdf',
-			name: 'Prisinformation FARAD 2026'
+			url: '/Prisinformation%20FARAD2027.pdf',
+			name: 'Prisinformation FARAD 2027'
 		},
 		{
 			lang: 'en',
-			url: '/Pricing%20FARAD%202026.pdf',
-			name: 'Pricing FARAD 2026'
+			url: '/Price_info%20FARAD2027.pdf',
+			name: 'Pricing FARAD 2027'
 		}
 	];
 

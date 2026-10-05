@@ -11,9 +11,9 @@
 </svelte:head>
 
 <img
-	src="/mh.jpg"
+	src="/image-87923.jpg"
 	alt="FARAD-banderoll på Matematikhuset"
-	class="mb-16 h-72 w-full object-cover sm:h-128 dark:opacity-90"
+	class="mb-16 h-72 w-full object-cover object-[0%_20%] sm:h-128 dark:opacity-90"
 />
 
 <StudentSessionAd />
