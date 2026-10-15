@@ -14,7 +14,7 @@
 		{m.student_session_desc_for_students()}
 	</p>
 
-	<div class="flex flex-wrap items-center gap-12">
+	<!-- <div class="flex flex-wrap items-center gap-12">
 		<Triathlon className="h-8" />
 		<Ericsson className="h-10" />
 		<div
@@ -22,13 +22,25 @@
 			style="mask-image: url('/exhibitors/acconeer.png');
          mask-repeat: no-repeat; mask-size: contain; mask-position: center;"
 		></div>
-	</div>
+	</div>-->
 
+	<!-- href={GOOGLE_FORM_URL} -->
 	<a
-		href={GOOGLE_FORM_URL}
-		class="inline-block rounded-lg bg-forange px-4 py-3 text-sm font-semibold text-white shadow md:px-6 md:py-4 md:text-lg dark:bg-white dark:font-medium dark:text-black"
+		aria-disabled="true"
+		class="btnDisabled my-3 inline-block rounded-lg bg-forange px-4 py-3 text-sm font-semibold text-white shadow md:px-6 md:py-4 md:text-lg dark:bg-white dark:font-medium dark:text-black"
 		>{m.sok_kontaktsamtal()} -></a
 	>
+	<p
+		class="sm:text-1xl max-w-[55ch] text-xl leading-normal font-normal text-neutral-600 md:text-2xl dark:text-white"
+	>
+		{m.student_session_disabled()}
+	</p>
 </section>
 
-<SpamMarquee>{m.sok_kontaktsamtal()}</SpamMarquee>
+<!-- <SpamMarquee>{m.sok_kontaktsamtal()}</SpamMarquee> -->
+
+<style>
+	.btnDisabled {
+		@apply cursor-not-allowed opacity-50;
+	}
+</style>
