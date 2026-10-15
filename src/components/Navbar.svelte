@@ -2,6 +2,7 @@
 	import { page } from '$app/state';
 	import { setLocale, locales, getLocale } from '$lib/paraglide/runtime';
 	import { routes } from '$lib/routes';
+	import Dropdown from '../components/Dropdown.svelte';
 </script>
 
 <div class="relative z-10 flex h-16 items-center justify-between px-4">
@@ -13,12 +14,21 @@
 			{#each routes as { href, name } (href)}
 				<li>
 					<a
-						class={'hover:text-neutral-700 dark:hover:text-neutral-300 ' +
+						class={'h-20 hover:text-neutral-700 dark:hover:text-neutral-300' +
 							(page.url.pathname === href ? 'underline' : '')}
 						{href}>{name()}</a
 					>
 				</li>
 			{/each}
+			<li>
+				<Dropdown
+					title="För studenter"
+					hrefs={[
+						{ url: '/student', name: 'Kontaktsamtal' },
+						{ url: '/sokvard', name: 'Sök värd' }
+					]}
+				></Dropdown>
+			</li>
 		</ul>
 	</nav>
 
