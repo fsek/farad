@@ -13,6 +13,7 @@
 	>
 		{m.student_session_desc_for_students()}
 	</p>
+	<!-- Det utkommenterade är länken till registrering och en marquee  --
 
 	<!-- <div class="flex flex-wrap items-center gap-12">
 		<Triathlon className="h-8" />
