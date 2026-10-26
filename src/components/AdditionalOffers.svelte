@@ -10,7 +10,7 @@
 		},
 		{
 			title: m.lunch_lecture(),
-			price: `${formatPrice(15_000)} + ${formatPrice(90)}/${m.student()}`,
+			price: `${formatPrice(16_000)} + ${formatPrice(90)}/${m.student()}`,
 			description: m.lunch_lecture_desc()
 		},
 		{
