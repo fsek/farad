@@ -13,7 +13,7 @@
 			{#each routes as { href, name } (href)}
 				<li>
 					<a
-						class={'hover:text-neutral-700 dark:hover:text-neutral-300 ' +
+						class={'text-sm hover:text-neutral-700 sm:text-base dark:hover:text-neutral-300' +
 							(page.url.pathname === href ? 'underline' : '')}
 						{href}>{name()}</a
 					>
@@ -22,7 +22,7 @@
 		</ul>
 	</nav>
 
-	<div class="flex items-center gap-2 text-sm sm:gap-3">
+	<div class="flex items-center gap-2 text-xs sm:gap-3 sm:text-sm">
 		{#each locales as locale (locale)}
 			<span class="text-neutral-400 first-of-type:hidden">/</span>
 			{#if locale === getLocale()}

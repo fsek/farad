@@ -10,7 +10,7 @@
 
 <!-- must be bg-white so that the text color can be inverted (since body is not bg-white) -->
 <section class="relative mx-auto my-8 max-w-6xl px-4 md:my-24">
-	<div class="absolute -top-4 right-8 z-0 w-24 rotate-6 md:w-48 lg:w-72 xl:-right-8">
+	<div class="absolute -top-4 right-8 z-0 w-24 rotate-6 sm:w-40 md:w-56 lg:w-72 xl:-right-8">
 		<svg
 			viewBox="0 0 481 479"
 			xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,9 @@
 		<div
 			class="absolute top-1/2 left-1/2 flex -translate-1/2 flex-col items-center text-center leading-none font-semibold text-orange-900"
 		>
-			<span class="text-4xl md:text-7xl lg:text-9xl" style="font-feature-settings: 'cv04'"
+			<span
+				class="text-4xl sm:text-[64px] md:text-8xl lg:text-9xl"
+				style="font-feature-settings: 'cv04'"
 				>28{#if getLocale() === 'en'}<sup
 						class="-top-[1em] text-[50%] md:-top-[2.5em] md:text-[25%]">th</sup
 					>{/if}</span
@@ -40,11 +42,11 @@
 		2027
 	</h1>
 
-	<p class="relative max-w-[42ch] text-xl leading-normal sm:text-2xl md:text-3xl">
+	<p class="relative max-w-[40ch] text-lg leading-normal md:text-2xl lg:text-3xl">
 		{m.about_farad()}
 	</p>
 
-	<div class="mt-8 flex flex-wrap gap-4 md:mt-12">
+	<div class="9xl:gap-20 mt-8 flex flex-wrap gap-4 md:mt-12">
 		<a
 			href="/student"
 			class="rounded-lg bg-neutral-950 px-4 py-3 text-sm font-semibold text-white shadow md:px-6 md:py-4 md:text-lg dark:bg-white dark:font-medium dark:text-black"
@@ -66,3 +68,10 @@
 />
 
 <!-- <Exhibitors /> -->
+
+<style>
+	@theme {
+		--breakpoint-md: 54rem;
+		--breakpoint-9xl: 100rem;
+	}
+</style>
