@@ -2,6 +2,7 @@
 	import { resolve } from '$app/paths';
 	import { m } from '$lib/paraglide/messages';
 	import { routes } from '$lib/routes';
+	import { page } from '$app/state';
 	import Fsek from './Fsek.svelte';
 	let isOpen = false;
 	let container: HTMLDivElement;
@@ -28,7 +29,8 @@
 	<div>
 		<button
 			type="button"
-			class="w-full justify-center border-gray-300 py-2 text-sm hover:text-neutral-700 sm:text-base dark:hover:text-neutral-300"
+			class={'w-full justify-center border-gray-300 py-2 text-sm hover:text-neutral-700 sm:text-base dark:hover:text-neutral-300 ' +
+				(page.url.pathname === '/student' || page.url.pathname === '/sokvard' ? 'underline' : '')}
 			aria-expanded={isOpen}
 			aria-haspopup="true"
 			on:click={toggleDropdown}

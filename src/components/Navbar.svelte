@@ -4,6 +4,7 @@
 	import { routes } from '$lib/routes';
 	import Dropdown from '../components/Dropdown.svelte';
 	import { m } from '$lib/paraglide/messages';
+	console.log(page.url.pathname);
 </script>
 
 <div class="relative z-10 flex h-16 items-center justify-between px-4">
@@ -14,7 +15,8 @@
 			</li>
 			<li>
 				<a
-					class="h-20 text-sm hover:text-neutral-700 sm:text-base dark:hover:text-neutral-300"
+					class={'h-20 text-sm hover:text-neutral-700 sm:text-base dark:hover:text-neutral-300 ' +
+						(page.url.pathname === '/company' ? 'underline' : '')}
 					href="/company"
 				>
 					{m.for_companies()}</a
