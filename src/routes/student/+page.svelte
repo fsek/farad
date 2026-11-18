@@ -7,12 +7,12 @@
 </script>
 
 <svelte:head>
-	<title>{m.for_students()} | FARAD</title>
+	<title>{m.student_sessions()} | FARAD</title>
 </svelte:head>
 
 <img
 	src="/image-87923.jpg"
-	alt="FARAD-banderoll på Matematikhuset"
+	alt={m.alt_fair_crowd()}
 	class="mb-16 h-72 w-full object-cover object-[0%_20%] sm:h-128 dark:opacity-90"
 />
 

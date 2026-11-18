@@ -12,7 +12,7 @@
 
 <img
 	src="/mh.jpg"
-	alt="FARAD-banderoll på Matematikhuset"
+	alt={m.alt_matematikhuset()}
 	class="mb-16 h-72 w-full object-cover sm:h-128 dark:opacity-90"
 />
 <section class="mx-auto mt-16 mb-9 max-w-6xl px-4">

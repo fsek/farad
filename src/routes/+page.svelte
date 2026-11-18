@@ -43,25 +43,32 @@
 	<p class="relative max-w-[42ch] text-xl leading-normal sm:text-2xl md:text-3xl">
 		{m.about_farad()}
 	</p>
+	<!-- <p class="relative mt-2 max-w-[42ch] text-xl leading-normal sm:text-2xl md:mt-5 md:text-3xl">
+		{m.host_application()}
+	</p> -->
 
-	<div class="mt-8 flex flex-wrap gap-4 md:mt-12">
-		<a
-			href="/student"
-			class="rounded-lg bg-neutral-950 px-4 py-3 text-sm font-semibold text-white shadow md:px-6 md:py-4 md:text-lg dark:bg-white dark:font-medium dark:text-black"
-			>{m.for_students()} ->
-		</a>
-
+	<div class="mt-3 flex flex-wrap gap-4 md:mt-5">
 		<a
 			href="/company"
 			class="rounded-lg bg-neutral-950 px-4 py-3 text-sm font-semibold text-white shadow md:px-6 md:py-4 md:text-lg dark:bg-white dark:font-medium dark:text-black"
 			>{m.for_companies()} ->
+		</a>
+		<!-- <a
+			href="/student"
+			class="rounded-lg bg-neutral-950 px-4 py-3 text-sm font-semibold text-white shadow md:px-6 md:py-4 md:text-lg dark:bg-white dark:font-medium dark:text-black"
+			>{m.student_sessions()} ->
+		</a> -->
+		<a
+			href="/sokvard"
+			class="inline-block rounded-lg bg-forange px-4 py-3 text-sm font-semibold text-white shadow md:px-6 md:py-4 md:text-lg dark:font-medium dark:text-black"
+			>{m.sok_vard()} ->
 		</a>
 	</div>
 </section>
 
 <img
 	src="/environment.jpg"
-	alt="FARAD-banderoll på Matematikhuset"
+	alt={m.alt_farad_banner()}
 	class="h-72 w-full object-cover sm:h-128 dark:opacity-90"
 />
 

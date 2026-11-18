@@ -7,10 +7,14 @@ export const routes = [
 	},*/
 	{
 		href: '/student',
-		name: m.for_students
+		name: m.student_sessions
 	},
 	{
 		href: '/company',
 		name: m.for_companies
+	},
+	{
+		href: '/sokvard',
+		name: m.sok_vard
 	}
 ] as const;
