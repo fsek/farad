@@ -4,44 +4,42 @@
 	import { routes } from '$lib/routes';
 	import Fsek from './Fsek.svelte';
 	let isOpen = false;
+	let container: HTMLDivElement;
 
 	function toggleDropdown() {
 		isOpen = !isOpen;
 	}
+	function handleWindowClick(event: MouseEvent) {
+		if (isOpen && !container.contains(event.target as Node)) isOpen = false;
+	}
+
+	function handleKeydown(event: KeyboardEvent) {
+		if (event.key === 'Escape') isOpen = false;
+	}
+
 	export let hrefs: { url: string; name: string }[];
 
 	export let title: string;
 </script>
 
-<div class="relative inline-block text-left">
+<svelte:window on:click={handleWindowClick} on:keydown={handleKeydown} />
+
+<div class="relative inline-block text-left" bind:this={container}>
 	<div>
 		<button
 			type="button"
-			class="inline-flex h-10 w-full justify-center border-gray-300 px-4 py-2 hover:text-neutral-700 dark:hover:text-neutral-300"
-			aria-expanded="true"
+			class="w-full justify-center border-gray-300 py-2 text-sm hover:text-neutral-700 sm:text-base dark:hover:text-neutral-300"
+			aria-expanded={isOpen}
 			aria-haspopup="true"
 			on:click={toggleDropdown}
 		>
 			{title}
-			<svg
-				class="-mr-1 ml-2 h-5 w-5"
-				xmlns="http://www.w3.org/2000/svg"
-				viewBox="0 0 20 20"
-				fill="currentColor"
-				aria-hidden="true"
-			>
-				<path
-					fill-rule="evenodd"
-					d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-					clip-rule="evenodd"
-				/>
-			</svg>
 		</button>
 	</div>
 
 	{#if isOpen}
 		<div
-			class="ring-opacity-5 absolute right-0 mt-2 w-full origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black focus:outline-none"
+			class="ring-opacity-5 absolute right-0 mt-2 w-40 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-gray-500 focus:outline-none dark:bg-gray-900"
 			role="menu"
 			aria-orientation="vertical"
 			aria-labelledby="options-menu"
@@ -50,8 +48,9 @@
 				{#each hrefs as { url, name } (url)}
 					<a
 						href={resolve(url)}
-						class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+						class="block px-4 py-2 text-sm hover:text-neutral-700 dark:hover:text-neutral-300"
 						role="menuitem"
+						on:click={toggleDropdown}
 					>
 						{name}
 					</a>

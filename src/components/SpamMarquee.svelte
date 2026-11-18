@@ -6,11 +6,12 @@
 	export let reverse: boolean = false;
 	export let speed: number = 200;
 	export let opacity: number = 1;
+	export let color: string = 'forange';
 </script>
 
 <Marquee
 	fade
-	class="text-[15vh] leading-[1.2] font-semibold text-forange uppercase opacity-70"
+	class="text-[15vh] leading-[1.2] font-semibold text-{color} uppercase opacity-70"
 	{speed}
 	{reverse}
 >
