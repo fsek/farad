@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 </svelte:head>
 
-<div class="flex min-h-screen flex-col bg-white">
+<div class="flex min-h-screen flex-col bg-winered">
 	<div class="grow">
 		<Navbar />
 

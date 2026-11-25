@@ -35,18 +35,15 @@
 		</div>
 	</div>
 
-	<h1 class="relative mr-24 mb-6 text-6xl font-bold md:mr-48 md:text-8xl lg:mr-72 lg:text-9xl">
-		<img
-			src="/logga_orange.svg"
-			alt="FARAD"
-			class="inline-block h-[1.13em] object-contain align-[-20%]"
-		/>
-		2027
-	</h1>
+	<div class="relative flex flex-row justify-between text-6xl font-bold">
+		<img src="/logga_burgundy vit bakgrund.png" alt="FARAD" class="-ml-24 h-[5em]" />
+		<div class="flex flex-col">
+			<p class="relative max-w-[42ch] text-xl leading-normal sm:text-2xl md:text-3xl">
+				{m.about_farad()}
+			</p>
+		</div>
+	</div>
 
-	<p class="relative max-w-[42ch] text-xl leading-normal sm:text-2xl md:text-3xl">
-		{m.about_farad()}
-	</p>
 	<!-- <p class="relative mt-2 max-w-[42ch] text-xl leading-normal sm:text-2xl md:mt-5 md:text-3xl">
 		{m.host_application()}
 	</p> -->
