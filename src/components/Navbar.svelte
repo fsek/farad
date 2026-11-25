@@ -36,7 +36,8 @@
 					title={m.for_students()}
 					hrefs={[
 						{ url: '/student', name: m.student_sessions() },
-						{ url: '/sokvard', name: m.sok_vard() }
+						{ url: '/sokvard', name: m.sok_vard() },
+						{ url: '/exhibitors', name: m.exhibitors() }
 					]}
 				></Dropdown>
 			</li>
