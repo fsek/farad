@@ -10,13 +10,18 @@
 		},
 		{
 			title: m.lunch_lecture(),
-			price: `${formatPrice(15_000)} + ${formatPrice(90)}/${m.student()}`,
+			price: `${formatPrice(16_000)} + ${formatPrice(90)}/${m.student()}`,
 			description: m.lunch_lecture_desc()
 		},
 		{
 			title: m.student_session(),
 			price: formatPrice(5_000),
 			description: m.student_session_desc()
+		},
+		{
+			title: m.extra_banquet_tickets(),
+			price: `${formatPrice(750)}/${m.ticket()}`,
+			description: m.banquet_tickets()
 		}
 	] as const;
 </script>

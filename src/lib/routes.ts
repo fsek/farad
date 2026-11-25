@@ -16,9 +16,5 @@ export const routes = [
 	{
 		href: '/sokvard',
 		name: m.sok_vard
-	},
-	{
-		href: '/exhibitors',
-		name: m.exhibitors
 	}
 ] as const;

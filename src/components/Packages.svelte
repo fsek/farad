@@ -10,11 +10,11 @@
 			features: [
 				m.n_sqm_booth_space({ n: 6 }),
 				//m.ads_in_the_guilds_medias(),
-				//m.n_farad_banquet_tickets({ n: 2 }),
 				m.booth_area(),
 				//m.booth_amenities(),
 				m.company_lounge(),
 
+				m.n_farad_banquet_tickets({ n: 2 }),
 				//m.n_business_lounge_tickets({ n: 2 }),
 				m.company_host_summary()
 			]
@@ -29,7 +29,7 @@
 				m.extended_ads_in_the_guilds_medias(),
 				//m.extended_booth_amenities(),
 				m.extended_company_lounge(),
-				//m.n_farad_banquet_tickets({ n: 4 }),
+				m.n_farad_banquet_tickets({ n: 4 }),
 				//m.n_business_lounge_tickets({ n: 4 }),
 				m.company_host_summary()
 			]
