@@ -9,7 +9,7 @@
 </svelte:head>
 
 <!-- must be bg-white so that the text color can be inverted (since body is not bg-white) -->
-<section class="relative mx-auto my-8 max-w-6xl px-4 md:my-24">
+<section class="relative mx-auto mt-8 mb-5 max-w-6xl px-4 md:mt-24 md:mb-10">
 	<div class="absolute -top-4 right-8 z-0 w-24 rotate-6 md:w-48 lg:w-72 xl:-right-8">
 		<svg
 			viewBox="0 0 481 479"
@@ -66,10 +66,10 @@
 	</div>
 </section>
 
+<Exhibitors />
+
 <img
 	src="/environment.jpg"
 	alt={m.alt_farad_banner()}
 	class="h-72 w-full object-cover sm:h-128 dark:opacity-90"
 />
-
-<!-- <Exhibitors /> -->
